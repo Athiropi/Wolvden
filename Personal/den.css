@@ -4,6 +4,9 @@
     font-family:fantasy;
 }
 
+#introduction{
+    color: var(--c1);
+}
 
 body{
     background: url('https://raw.githubusercontent.com/Athiropi/Wolvden/main/Personal/Images/Final.jpeg');
