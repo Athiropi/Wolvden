@@ -4,6 +4,13 @@
     font-family:fantasy;
 }
 
-#introduction{
 
+body{
+    background: url('https://raw.githubusercontent.com/Athiropi/Wolvden/main/Personal/Images/Final.jpeg');
+    background-size: 1500px;
+    }
+
+
+.container{
+    opacity: 0.7;
 }
