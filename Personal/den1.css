@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Almendra+SC&display=swap');
+:root{
+    --br1: #39332a;
+    --br2: #242019;
+    --br3: #34322f;
+    --go1: #ffe9a4;
+    --go2: #efd071;
+    --go3: #bd9929;
+    --f: "Almendra SC", serif;}
+
+body{
+    background: url('https://raw.githubusercontent.com/Athiropi/Wolvden/main/Personal/Images/POV.jpeg') bottom,
+        url('https://raw.githubusercontent.com/Athiropi/Wolvden/main/Personal/Images/Final.jpeg') ;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 1500px;
+     font-family: var(--f);}
+
+.navbar-main{
+    border-left: 3px solid var(--go3);
+    border-right: 3px solid var(--go2);}
+#header .navbar-main .navbar-nav{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row;
+    justify-content: flex-end;}
+#header .navbar-main .nav-item a{
+    font-size: 0;}
+#header .navbar-main .nav-item a:hover{
+    transition: 0.5s;
+    font-size: medium;}
+
+#header .navbar-nav .nav-item a:hover{
+    color: var(--b3);}
+#header .navbar-nav .nav-item a:hover .fa{
+    color:white;}
+
+#header .navbar-status{
+    background-image: linear-gradient(to top left, var(--go1), var(--go3));
+    color: black;}
+
+.breadcrumb-nav{
+    border-radius: 0px 0px 30px 30px;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid var(--go1);
+    border-left: 2px solid var(--go2);
+    border-right: 2px solid var(--go2);}
+
+#main{
+    background-color: rgba(0,0,0,0.2);
+}
+
