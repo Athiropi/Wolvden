@@ -1,51 +1,159 @@
 @import url('https://fonts.googleapis.com/css2?family=Almendra+SC&display=swap');
+@import url('/font-awesome-4.6.3/css/font-awesome.min.css');
 :root{
-    --br1: #39332a;
+    --br1: #1a1713;
     --br2: #242019;
     --br3: #34322f;
+    --br4: #5d574d;
+    --br5: #2f2921;
     --go1: #ffe9a4;
     --go2: #efd071;
     --go3: #bd9929;
     --f: "Almendra SC", serif;}
 
 body{
-    background: url('https://raw.githubusercontent.com/Athiropi/Wolvden/main/Personal/Images/POV.jpeg') bottom,
-        url('https://raw.githubusercontent.com/Athiropi/Wolvden/main/Personal/Images/Final.jpeg') ;
-    background-repeat: no-repeat, no-repeat;
-    background-size: 1500px;
-     font-family: var(--f);}
+    background: url('https://raw.githubusercontent.com/Athiropi/Wolvden/main/Personal/Images/POV.jpeg') bottom,   url('https://raw.githubusercontent.com/Athiropi/Wolvden/main/Personal/Images/Final.jpeg') ;
+    background-repeat: no-repeat, repeat;
+    background-size: 100%;
+    border:2px solid var(--br4);
+    font-family: var(--f);}
+a{
+    color: var(--go2);}
+a:hover{
+    color:white;
+    text-decoration: none;}
 
+/*Alert E.g. Finished Scouting, Pups at Risk, Etc*/
+.alert{
+    content:"Test content";
+    background-image: url('https://raw.githubusercontent.com/Athiropi/Wolvden/main/Personal/Images/Vash.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0px 30px;
+    border: 1.5px solid var(--go2);
+    outline: 1px solid var(--br4);
+    color: var(--br5);
+    text-align: center;
+    width:80%;
+    justify-content: center;}
+.alert .alert-link{
+    font-size: 0;
+    color: black;}
+.alert .alert-link:before{
+    font-size: 15px !important;
+    font-family: 'Font Awesome 5 Free' !important;
+    content:"\f0da\f0da\f0da";
+    padding-left:5px;}
+.alert .fas{
+    color: var(--go1);}
+.alert a{
+    color: var(--br4);}
+.alert a:hover{
+    color: var(--go3);}
+.alert-danger{
+    width:100%;}
+.alert-success a{
+font-size: 0;}
+.alert-success a:before{
+    font-size:10px !important;
+    font-family: 'Font Awesome 5 Free' !important;
+    content:"\f091";}
+
+/*Main*/
 .navbar-main{
+    background-image: linear-gradient(to bottom,black,var(--br5)), url('https://raw.githubusercontent.com/Athiropi/Wolvden/main/Personal/Images/Vash.jpeg');
+    background-blend-mode: lighten;
     border-left: 3px solid var(--go3);
     border-right: 3px solid var(--go2);}
+#header .navbar-main .navbar-nav .nav-link .fa{
+    color: var(--go2);
+    text-shadow: 0 0 1px var(--br4), 0 0 1px var(--br4), 0 0 1px var(--br4), 0 0 1px var(--br4);}
 #header .navbar-main .navbar-nav{
     display: flex;
     flex-grow: 1;
     flex-direction: row;
     justify-content: flex-end;}
-#header .navbar-main .nav-item a{
+#header .navbar-main .nav-item a{;
     font-size: 0;}
 #header .navbar-main .nav-item a:hover{
     transition: 0.5s;
-    font-size: medium;}
-
+    font-size: small;}
 #header .navbar-nav .nav-item a:hover{
-    color: var(--b3);}
+    color: white;}
 #header .navbar-nav .nav-item a:hover .fa{
-    color:white;}
+    color:var(--go2);}
 
+/*Status*/
 #header .navbar-status{
-    background-image: linear-gradient(to top left, var(--go1), var(--go3));
-    color: black;}
+    background-image: linear-gradient(to top left, var(--br5), var(--br3)), url('https://raw.githubusercontent.com/Athiropi/Wolvden/main/Personal/Images/Vash.jpeg');
+    background-size: 100%;
+    border-left: 2px solid var(--go2);
+    border-right: 2px solid var(--go1);
+    color: var(--go2);}
+#header .navbar-status a{
+    color: var(--go2);}
+#header .navbar-status .navbar-nav .nav-link .fa:hover{
+    color: white;}
+#header .navbar-status .navbar-nav .dib span, #header .navbar-status .navbar-nav .nav-item:last-child span{
+    visibility: hidden;
+    position: absolute;}
 
+/*Breadcrumb*/
 .breadcrumb-nav{
+    background-image: linear-gradient(to bottom,black,var(--br5)), url('https://raw.githubusercontent.com/Athiropi/Wolvden/main/Personal/Images/Vash.jpeg');
+    background-blend-mode: color-dodge;
     border-radius: 0px 0px 30px 30px;
     margin-bottom: 2rem;
     border-bottom: 1px solid var(--go1);
     border-left: 2px solid var(--go2);
     border-right: 2px solid var(--go2);}
-
-#main{
-    background-color: rgba(0,0,0,0.2);
+.breadcrumb-nav a{
+    color: var(--br1);}
+.breadcrumb-item.active{
+    color: var(--go1);
+    text-shadow: 0 0 1px var(--br4), 0 0 1px var(--br4), 0 0 1px var(--br4), 0 0 1px var(--br4);
 }
+#bookmarkPage.fas.fa-bookmark.text-danger::before{
+    color: var(--go2);
+    text-shadow: 0 0 1px var(--br4), 0 0 1px var(--br4), 0 0 1px var(--br4), 0 0 1px var(--br4);}
+
+
+/*Main Container*/
+#main{
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 0px 200px;
+    border: 2px solid var(--go2);
+    outline: 1px dotted var(--br4); }
+#main > h1{
+    text-align: center;
+    font-size:80px;
+    text-shadow: 1px 1px black;}
+#main .nav-tabs{
+    justify-content: space-evenly;
+    border-left: 0;
+    border-right: 0;
+    border-top: 1px solid var(--br4);
+    border-bottom: 1px solid var(--br4);
+    box-shadow: 0px 0px 10px 0px var(--br4);
+    font-size: 0;}
+#main .nav-tabs .nav-link{
+    background: rgba(0,0,0,0);
+    border: none;}
+.nav-tabs .nav-item:first-child a:before{
+    font-size: 20px !important;
+    font-family: 'Font Awesome 5 Free' !important;
+    content:"\f6bb";
+    color: var(--go2);}
+.nav-tabs .nav-item:first-child a:hover:before{
+    color: var(--go1);
+    content:"\f1b0";
+    font-size:30px;}
+.nav-tabs .nav-item:last-child a:hover:before{
+    color: var(--go1);
+    content:"\f118"}
+.nav-tabs .nav-item:last-child a:before{
+    font-size: 20px !important;
+    font-family: 'Font Awesome 5 Free' !important;
+    content:"\f11a";
+    color: var(--go2);}
 
