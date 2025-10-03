@@ -11,9 +11,18 @@
     --go3: #bd9929;
     --f: "Almendra SC", serif;}
 
+/*Gifs*/
+.welcome-image{
+    width: 100%;
+    border:1px solid var(--go3);
+    border-radius: 10px 10px;
+    box-shadow: 0px -5px 15px 5px var(--br4);}
+.snowflakes{
+    opacity:0.5;}
+
 body{
-    background: url('https://raw.githubusercontent.com/Athiropi/Wolvden/main/Personal/Images/POV.jpeg') bottom,   url('https://raw.githubusercontent.com/Athiropi/Wolvden/main/Personal/Images/Final.jpeg') ;
-    background-repeat: no-repeat, repeat, repeat;
+    background: url('https://raw.githubusercontent.com/Athiropi/Wolvden/main/Personal/Images/POV.jpeg') bottom,   url('https://raw.githubusercontent.com/Athiropi/Wolvden/main/Personal/Images/Final.jpeg') black;
+    background-repeat: no-repeat, no-repeat, repeat;
     background-size: 100%;
     border:2px solid var(--br4);
     font-family: var(--f);}
@@ -111,25 +120,45 @@ font-size: 0;}
     color: var(--br1);}
 .breadcrumb-item.active{
     color: var(--go1);
-    text-shadow: 0 0 1px var(--br4), 0 0 1px var(--br4), 0 0 1px var(--br4), 0 0 1px var(--br4);
-}
+    text-shadow: 0 0 1px var(--br4), 0 0 1px var(--br4), 0 0 1px var(--br4), 0 0 1px var(--br4);}
 #bookmarkPage.fas.fa-bookmark.text-danger::before{
     color: var(--go2);
     text-shadow: 0 0 1px var(--br4), 0 0 1px var(--br4), 0 0 1px var(--br4), 0 0 1px var(--br4);}
 
+/*Footer*/
+#footer{
+    background-image: linear-gradient(to top, var(--br1), var(--go1)), url('https://raw.githubusercontent.com/Athiropi/Wolvden/main/Personal/Images/Vash.jpeg');
+    background-blend-mode: overlay;
+    margin-top: 2rem;
+    border-radius: 30px 30px 0px 0px;
+    border: 3px solid var(--go2);
+    border-top: 1px solid var(--go1)}
 
+/*
+.container .row{
+    justify-content: center !important;
+    width: 100%;
+}
+*/
 /*Main Container*/
 #main{
+    padding-bottom:10%;
+    /*
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    align-content: center !important;
+    */
     background-color: rgba(0,0,0,0.1);
     border-radius: 0px 200px;
     border: 2px solid var(--go2);
-    outline: 1px dotted var(--br4); }
+    outline: 1px dotted var(--br4);}
 #main > h1{
     text-align: center;
     font-size:80px;
     text-shadow: 1px 1px black;}
 #main .nav-tabs{
     background-color: rgba(255, 255, 255,0.15);
+    background-size: stretch;
     justify-content: space-evenly;
     border-left: 0;
     border-right: 0;
@@ -234,7 +263,7 @@ font-size: 0;}
 
 
 
-/*Wolf Portraits*/
+/*Table Header*/
 #main tr{
     background-color: rgba(0,0,0,0.1);
     border-radius: 0px 30px;
@@ -242,7 +271,7 @@ font-size: 0;}
     outline: 1px solid var(--go1);}
 #main th{
     background-image: url('https://raw.githubusercontent.com/Athiropi/Wolvden/main/Personal/Images/Vash.jpeg');
-    border-radius:0px 30px;
+    border-radius:0px 30px 0px 30px;
     text-align: center;}
 #main th a{
     color: white;
@@ -250,9 +279,15 @@ font-size: 0;}
 #main th a:hover{
     color: white;
     text-shadow: 0px 0px 1px white}
+/*Table*/
 #main .card.mb-3{
     background-color: rgba(0,0,0,0);}
 
+/*Lead Wolf*/
+#lblPackLeaderTitle{
+    color: var(--go2);
+    text-shadow: 0px 0px 0px black;
+    padding-right:1%;}
 #main .card.mb-3 a img{
     background-color: rgba(0,0,0,0);
     border:2px solid var(--go2);
@@ -271,37 +306,115 @@ font-size: 0;}
     border:2px solid var(--go2);
     border-radius: 100px 100px 20px 20px;}
 
+/*Stats*/
 #main .col-xl-6{
     color: white;
     padding:0;
-    background: url('https://raw.githubusercontent.com/Athiropi/Wolvden/main/Personal/Images/Vash.jpeg');
+    background-image: url('https://raw.githubusercontent.com/Athiropi/Wolvden/main/Personal/Images/Vash.jpeg');
     background-size: cover;
     background-blend-mode: multiply;}
+/*Featured Wolf*/
+#lblFeaturedWolfTitle{
+    color: var(--go1);
+    text-shadow: 0px 0px 1px black;
+}
 #main .featured-wolf a img{
     border:2px solid var(--go2);
     border-radius: 100px 100px 0px 0px;}
 #main .featured-wolf a:nth-of-type(2){
     padding: 2.2px;
-    padding-left: 25%;
-    padding-right: 25%;
-    border:1px solid var(--go2);
-}
+    padding-left: 43px;
+    padding-right: 43px;
+    border:1px solid var(--go2);}
 
-/* Attempt to hide stats but no point really
-#main .col-xl-6.col-sm-12:after{
-    content:"Stats";
-    padding: 10px;
-    visibility: visible;}
-#main .col-xl-6.col-sm-12{
-    border: 10px solid pink;
-    position: absolute;
-    visibility: hidden;}
-#main .col-xl-6.col-sm-12:hover{
-    transition: 1s;
-    position: static;
+/*Collapse Cave Button*/
+.collapseCave, .btn-success{
+    background: rgba(0,0,0,0);
+    border: 0;
+    font-size:0;}
+.collapseCave:after, .btn-success:after{
+    font-family: 'Font Awesome 5 Free' !important;
+    font-size:14px;
+    content:"\f185";
+    color: var(--go1);}
+.collapseCave:hover, .collapseCave:hover:after, .btn-success:hover, .btn-success:hover:after{
+    color:white;
+    background: rgba(0,0,0,0);
+    content:"\f186";}
+
+
+/*Wolf Portraits*/
+.table, form .card-body{
+    background: rgba(0,0,0,0.2) !important;}
+.card-body a{
+    display: grid;
+    grid-template-columns: 200px 200px 200px;}
+.card-body a img{
+    border-radius: 100px 100px 0px 0px;
+    border: 1px solid var(--go3);}
+.card-body a div{
+    border: 1px solid var(--go2);
+    background: var(--br3) !important;}
+.card-body a span{
+    background: var(--br4);
+    border-bottom: 1px solid var(--go2);
+    border-left: 1px solid var(--go2);
+    border-right: 1px solid var(--go2);}
+
+/*
+#sidebar{
+    z-index:100;
+    background: rgba(0,0,0,0);
+    left:0;
+    top:0;
+    position: fixed;
+    display: flex;
+    flex-direction: column;}
+.multi-column.no-gutters > div{
+    max-width: 25%;
+    border-radius: 50%;}
+.multi-column.no-gutters .card{
+    border: 0;
+    margin:0;
+    border-radius: 50%;}
+.multi-column.no-gutters .card-body{
+    visibility: hidden;
+    transform: translateX(50%);
+    width: 200%;}
+.multi-column.no-gutters .card:hover .card-body{
     visibility: visible;
+    width:200%;
+    background: rgba(0,0,0,0.5);}
+.multi-column.no-gutters #quest-widget{
+    border: 0;
 }*/
 
 
+/*Only for Current Quest Card
+.multi-column.no-gutters {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 50%;}
+.multi-column.no-gutters #quest-widget{
+    background-image: url('https://raw.githubusercontent.com/Athiropi/Wolvden/main/Personal/Images/shin86.gif');
+    border: 1px solid var(--go1);
+    background-size: cover;
+    border-radius: 50%;
+    width:58%;}
+.multi-column.no-gutters #quest-widget .card-body{
+    visibility: collapse;}
+.multi-column.no-gutters #quest-widget:hover .card-body{
+    visibility: visible;
+    transform: translateX(100%);
+    background: rgba(0,0,0,0.5);}
+*/
 
-/*Credits to Athiropi (Ropi #185626) on Wolvden*/
+
+
+
+
+@-webkit-keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@-webkit-keyframes snowflakes-shake{0%{-webkit-transform:translateX(0px);transform:translateX(0px)}50%{-webkit-transform:translateX(80px);transform:translateX(80px)}100%{-webkit-transform:translateX(0px);transform:translateX(0px)}}@keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@keyframes snowflakes-shake{0%{transform:translateX(0px)}50%{transform:translateX(80px)}100%{transform:translateX(0px)}}.snowflake{position:fixed;top:-10%;z-index:9999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:default;-webkit-animation-name:snowflakes-fall,snowflakes-shake;-webkit-animation-duration:10s,3s;-webkit-animation-timing-function:linear,ease-in-out;-webkit-animation-iteration-count:infinite,infinite;-webkit-animation-play-state:running,running;animation-name:snowflakes-fall,snowflakes-shake;animation-duration:10s,3s;animation-timing-function:linear,ease-in-out;animation-iteration-count:infinite,infinite;animation-play-state:running,running}.snowflake:nth-of-type(0){left:1%;-webkit-animation-delay:0s,0s;animation-delay:0s,0s}.snowflake:nth-of-type(1){left:10%;-webkit-animation-delay:1s,1s;animation-delay:1s,1s}.snowflake:nth-of-type(2){left:20%;-webkit-animation-delay:6s,.5s;animation-delay:6s,.5s}.snowflake:nth-of-type(3){left:30%;-webkit-animation-delay:4s,2s;animation-delay:4s,2s}.snowflake:nth-of-type(4){left:40%;-webkit-animation-delay:2s,2s;animation-delay:2s,2s}.snowflake:nth-of-type(5){left:50%;-webkit-animation-delay:8s,3s;animation-delay:8s,3s}.snowflake:nth-of-type(6){left:60%;-webkit-animation-delay:6s,2s;animation-delay:6s,2s}.snowflake:nth-of-type(7){left:70%;-webkit-animation-delay:2.5s,1s;animation-delay:2.5s,1s}.snowflake:nth-of-type(8){left:80%;-webkit-animation-delay:1s,0s;animation-delay:1s,0s}.snowflake:nth-of-type(9){left:90%;-webkit-animation-delay:3s,1.5s;animation-delay:3s,1.5s}
+
+
+/*Credits to Ropi #185626 on Wolvden*/
