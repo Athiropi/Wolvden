@@ -13,7 +13,7 @@
 
 body{
     background: url('https://raw.githubusercontent.com/Athiropi/Wolvden/main/Personal/Images/POV.jpeg') bottom,   url('https://raw.githubusercontent.com/Athiropi/Wolvden/main/Personal/Images/Final.jpeg') ;
-    background-repeat: no-repeat, repeat;
+    background-repeat: no-repeat, repeat, repeat;
     background-size: 100%;
     border:2px solid var(--br4);
     font-family: var(--f);}
@@ -129,6 +129,7 @@ font-size: 0;}
     font-size:80px;
     text-shadow: 1px 1px black;}
 #main .nav-tabs{
+    background-color: rgba(255, 255, 255,0.15);
     justify-content: space-evenly;
     border-left: 0;
     border-right: 0;
@@ -143,7 +144,8 @@ font-size: 0;}
     font-size: 20px !important;
     font-family: 'Font Awesome 5 Free' !important;
     content:"\f6bb";
-    color: var(--go2);}
+    color: var(--go2);
+    text-shadow: 1px 1px 2px black;}
 .nav-tabs .nav-item:first-child a:hover:before{
     color: var(--go1);
     content:"\f1b0";
@@ -155,5 +157,78 @@ font-size: 0;}
     font-size: 20px !important;
     font-family: 'Font Awesome 5 Free' !important;
     content:"\f11a";
-    color: var(--go2);}
+    color: var(--go2);
+    text-shadow: 1px 1px 2px black;}
 
+/*Den Images*/
+#main .form-row .col-md-4:first-child .card-img-top {
+    visibility: hidden;
+    background-image:
+    
+}
+
+
+/*Wolf Portraits*/
+#main tr{
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 0px 30px;
+    border: 1.5px solid var(--go2);
+    outline: 1px solid var(--go1);}
+#main th{
+    background-image: url('https://raw.githubusercontent.com/Athiropi/Wolvden/main/Personal/Images/Vash.jpeg');
+    border-radius:0px 30px;
+    text-align: center;}
+#main th a{
+    color: white;
+    text-shadow: 0px 0px 3px black}
+#main th a:hover{
+    color: white;
+    text-shadow: 0px 0px 1px white}
+#main .card.mb-3{
+    background-color: rgba(0,0,0,0);}
+
+#main .card.mb-3 a img{
+    background-color: rgba(0,0,0,0);
+    border:2px solid var(--go2);
+    border-radius: 100px 100px 0px 0px;}
+#main .card.mb-3 .card-body, #main .featured-wolf a:nth-of-type(2){
+    background-image: linear-gradient(to bottom,var(--br4),var(--br1)),url('https://raw.githubusercontent.com/Athiropi/Wolvden/main/Personal/Images/Vash.jpeg');
+    width: 100%;
+    background-blend-mode: multiply;
+    border: 2px solid var(--go3);
+    border-radius: 0px 0px 15px 15px}
+
+#main .col-xl-6{
+    color: white;
+    padding:0;
+    background: url('https://raw.githubusercontent.com/Athiropi/Wolvden/main/Personal/Images/Vash.jpeg'),rgba(0,0,0,0.2);
+    background-size: cover;
+    background-blend-mode: multiply;}
+#main .featured-wolf a img{
+    border:2px solid var(--go2);
+    border-radius: 100px 100px 0px 0px;}
+#main .featured-wolf a:nth-of-type(2){
+    padding: 2.2px;
+    padding-left: 25%;
+    padding-right: 25%;
+    border:1px solid var(--go2);
+}
+
+/* Attempt to hide stats but no point really
+#main .col-xl-6.col-sm-12:after{
+    content:"Stats";
+    padding: 10px;
+    visibility: visible;}
+#main .col-xl-6.col-sm-12{
+    border: 10px solid pink;
+    position: absolute;
+    visibility: hidden;}
+#main .col-xl-6.col-sm-12:hover{
+    transition: 1s;
+    position: static;
+    visibility: visible;
+}*/
+
+
+
+/*Credits to Athiropi (Ropi #185626) on Wolvden*/
