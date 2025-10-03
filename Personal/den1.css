@@ -79,7 +79,7 @@ font-size: 0;}
     transition: 0.5s;
     font-size: small;}
 #header .navbar-nav .nav-item a:hover{
-    color: white;}
+    color: var(--br1);}
 #header .navbar-nav .nav-item a:hover .fa{
     color:var(--go2);}
 
@@ -161,11 +161,77 @@ font-size: 0;}
     text-shadow: 1px 1px 2px black;}
 
 /*Den Images*/
+/*First - Pack Dynasty*/
 #main .form-row .col-md-4:first-child .card-img-top {
-    visibility: hidden;
-    background-image:
-    
+    visibility:hidden;}
+#main .form-row .col-md-4:first-child .card{
+    background-image: url('https://raw.githubusercontent.com/Athiropi/Wolvden/main/Personal/Images/vashKick.gif');
+    background-size:cover;
+    border: 1px solid var(--go2);
+    border-radius: 0px 40px 0px 40px;}
+#main .form-row .col-md-4:first-child .card-header{
+    border: 1px solid white;
+    border-radius: 0px 0px 0px 40px;}
+/*Second Pack Overview*/
+#main .form-row .col-md-4:nth-child(2) .card-img-top {
+    visibility:hidden;}
+#main .form-row .col-md-4:nth-child(2) .card{
+    background-image: url('https://raw.githubusercontent.com/Athiropi/Wolvden/main/Personal/Images/nana.gif');
+    background-size:cover;
+    border: 1px solid var(--go2);
+    border-radius: 40px 40px 40px 40px;}
+#main .form-row .col-md-4:nth-child(2) .card-header{
+    border: 1px solid white;
+    border-radius: 0px 0px 40px 40px;}
+/*Third Breeding*/
+#main .form-row .col-md-4:nth-child(3) .card-img-top {
+    visibility:hidden;}
+#main .form-row .col-md-4:nth-child(3) .card{
+    background-image: url('https://raw.githubusercontent.com/Athiropi/Wolvden/main/Personal/Images/wolf.gif');
+    background-size:cover;
+    border: 1px solid var(--go2);
+    border-radius: 40px 0px 40px 0px;}
+#main .form-row .col-md-4:nth-child(3) .card-header{
+    border: 1px solid white;
+    border-radius: 0px 0px 40px 0px;}
+/*Fourth Pupsitting*/
+#main .form-row .col-md-4:nth-child(4) .card-img-top {
+    visibility:hidden;}
+#main .form-row .col-md-4:nth-child(4) .card{
+    background-image: url('https://raw.githubusercontent.com/Athiropi/Wolvden/main/Personal/Images/JinMori.gif');
+    background-size:cover;
+    border: 1px solid var(--go2);
+    border-radius: 40px 0px 40px 40px;}
+#main .form-row .col-md-4:nth-child(4) .card-header{
+    border: 1px solid white;
+    border-radius: 0px 0px 40px 0px;}
+/*Fifth Nesting*/
+#main .form-row .col-md-4:nth-child(5) .card-img-top {
+    visibility:hidden;}
+#main .form-row .col-md-4:nth-child(5) .card{
+    background-image: url('https://raw.githubusercontent.com/Athiropi/Wolvden/main/Personal/Images/jjk.gif');
+    background-size:cover;
+    border: 1px solid var(--go2);
+    border-radius: 40px 40px 40px 40px;}
+#main .form-row .col-md-4:nth-child(5) .card-header{
+    border: 1px solid white;
+    border-radius: 0px 0px 40px 40px;}
+/*Last Socializing*/
+#main .form-row .col-md-4:last-child .card-img-top {
+    visibility:hidden;}
+#main .form-row .col-md-4:last-child .card{
+    background-image: url('https://raw.githubusercontent.com/Athiropi/Wolvden/main/Personal/Images/haikyuu.gif');
+    background-size:cover;
+    border: 1px solid var(--go2);
+    border-radius: 0px 40px 0px 40px;}
+#main .form-row .col-md-4:last-child .card-header{
+    border: 1px solid white;
+    border-radius: 0px 0px 0px 40px;}
+#main .form-row .col-md-4 .card:hover{
+    background-color: rgba(90,90,90,1);
+    background-blend-mode: color-dodge;
 }
+
 
 
 /*Wolf Portraits*/
@@ -196,12 +262,19 @@ font-size: 0;}
     width: 100%;
     background-blend-mode: multiply;
     border: 2px solid var(--go3);
-    border-radius: 0px 0px 15px 15px}
+    border-radius: 0px 0px 15px 15px;}
+#main .card.mb-3 a img:hover{
+    visibility:hidden;}
+#main .card.mb-3{
+    background-image: url('https://raw.githubusercontent.com/Athiropi/Wolvden/main/Personal/Images/cabcalloway.gif');
+    background-size: cover;
+    border:2px solid var(--go2);
+    border-radius: 100px 100px 20px 20px;}
 
 #main .col-xl-6{
     color: white;
     padding:0;
-    background: url('https://raw.githubusercontent.com/Athiropi/Wolvden/main/Personal/Images/Vash.jpeg'),rgba(0,0,0,0.2);
+    background: url('https://raw.githubusercontent.com/Athiropi/Wolvden/main/Personal/Images/Vash.jpeg');
     background-size: cover;
     background-blend-mode: multiply;}
 #main .featured-wolf a img{
