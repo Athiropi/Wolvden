@@ -20,6 +20,10 @@
 .snowflakes{
     opacity:0.5;}
 
+#fraDenHTML{
+    text-shadow: 0px 0px 1px black;
+}
+
 body{
     background: url('https://raw.githubusercontent.com/Athiropi/Wolvden/main/Personal/Images/POV.jpeg') bottom,   url('https://raw.githubusercontent.com/Athiropi/Wolvden/main/Personal/Images/Final.jpeg') black;
     background-repeat: no-repeat, no-repeat, repeat;
@@ -106,6 +110,12 @@ font-size: 0;}
 #header .navbar-status .navbar-nav .dib span, #header .navbar-status .navbar-nav .nav-item:last-child span{
     visibility: hidden;
     position: absolute;}
+#header .navbar-status .navbar-nav:before{
+    font-size: small;
+    color:var(--br4);
+    padding-top:15px;
+    content:"css by #185626";
+}
 
 /*Breadcrumb*/
 .breadcrumb-nav{
@@ -134,20 +144,17 @@ font-size: 0;}
     border: 3px solid var(--go2);
     border-top: 1px solid var(--go1)}
 
-/*
+
 .container .row{
     justify-content: center !important;
     width: 100%;
 }
-*/
 /*Main Container*/
 #main{
     padding-bottom:10%;
-    /*
     flex: 0 0 100% !important;
     max-width: 100% !important;
     align-content: center !important;
-    */
     background-color: rgba(0,0,0,0.1);
     border-radius: 0px 200px;
     border: 2px solid var(--go2);
@@ -346,22 +353,36 @@ font-size: 0;}
 /*Wolf Portraits*/
 .table, form .card-body{
     background: rgba(0,0,0,0.2) !important;}
-.card-body a{
-    display: grid;
-    grid-template-columns: 200px 200px 200px;}
-.card-body a img{
+form .card-body a{
+    display: flex;
+    flex-direction: column-reverse;}
+form .card-body a img{
     border-radius: 100px 100px 0px 0px;
     border: 1px solid var(--go3);}
-.card-body a div{
+form .card-body a div{
     border: 1px solid var(--go2);
     background: var(--br3) !important;}
-.card-body a span{
+form .card-body a span{
     background: var(--br4);
     border-bottom: 1px solid var(--go2);
     border-left: 1px solid var(--go2);
     border-right: 1px solid var(--go2);}
+.bg-success{
+    background-image: linear-gradient(to right, var(--go2), white)!important;
+    border:1px solid var(--go1)}
+.bg-warning{
+    background-image: linear-gradient(to right, var(--go2), var(--go1))!important;
+    border:1px solid var(--go1)}
+.bg-primary{
+    background-image: linear-gradient(to right, var(--go3), var(--go2))!important;
+    border:1px solid var(--go2)}
+.bg-danger{
+    background-image: linear-gradient(to right, var(--br4), var(--go3))!important;
+    border:1px solid var(--go3)}
+.bg-info{
+    background-image: linear-gradient(to right, var(--br1), var(--br4))!important;
+    border:1px solid var(--br4)}
 
-/*
 #sidebar{
     z-index:100;
     background: rgba(0,0,0,0);
@@ -387,7 +408,7 @@ font-size: 0;}
     background: rgba(0,0,0,0.5);}
 .multi-column.no-gutters #quest-widget{
     border: 0;
-}*/
+}
 
 
 /*Only for Current Quest Card
