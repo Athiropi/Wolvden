@@ -1,65 +1,3 @@
-/*Main*/
-.navbar-main{
-    background-image: linear-gradient(to bottom,black,var(--br5)), url('https://raw.githubusercontent.com/Athiropi/Wolvden/main/Personal/Images/Vash.jpeg');
-    background-blend-mode: lighten;
-    border-left: 3px solid var(--go3);
-    border-right: 3px solid var(--go2);}
-#header .navbar-main .navbar-nav .nav-link .fa{
-    color: var(--go2);
-    text-shadow: 0 0 1px var(--br4), 0 0 1px var(--br4), 0 0 1px var(--br4), 0 0 1px var(--br4);}
-#header .navbar-main .navbar-nav{
-    display: flex;
-    flex-grow: 1;
-    flex-direction: row;
-    justify-content: flex-end;}
-#header .navbar-main .nav-item a{;
-    font-size: 0;}
-#header .navbar-main .nav-item a:hover{
-    transition: 0.5s;
-    font-size: small;}
-#header .navbar-nav .nav-item a:hover{
-    color: var(--br1);}
-#header .navbar-nav .nav-item a:hover .fa{
-    color:var(--go2);}
-
-/*Status*/
-#header .navbar-status{
-    background-image: linear-gradient(to top left, var(--br5), var(--br3)), url('https://raw.githubusercontent.com/Athiropi/Wolvden/main/Personal/Images/Vash.jpeg');
-    background-size: 100%;
-    border-left: 2px solid var(--go2);
-    border-right: 2px solid var(--go1);
-    color: var(--go2);}
-#header .navbar-status a{
-    color: var(--go2);}
-#header .navbar-status .navbar-nav .nav-link .fa:hover{
-    color: white;}
-#header .navbar-status .navbar-nav .dib span, #header .navbar-status .navbar-nav .nav-item:last-child span{
-    visibility: hidden;
-    position: absolute;}
-#header .navbar-status .navbar-nav:before{
-    font-size: small;
-    color:var(--br4);
-    padding-top:15px;
-    content:"css by #185626";
-}
-
-/*Breadcrumb*/
-.breadcrumb-nav{
-    background-image: linear-gradient(to bottom,black,var(--br5)), url('https://raw.githubusercontent.com/Athiropi/Wolvden/main/Personal/Images/Vash.jpeg');
-    background-blend-mode: color-dodge;
-    border-radius: 0px 0px 30px 30px;
-    margin-bottom: 2rem;
-    border-bottom: 1px solid var(--go1);
-    border-left: 2px solid var(--go2);
-    border-right: 2px solid var(--go2);}
-.breadcrumb-nav a{
-    color: var(--br1);}
-.breadcrumb-item.active{
-    color: var(--go1);
-    text-shadow: 0 0 1px var(--br4), 0 0 1px var(--br4), 0 0 1px var(--br4), 0 0 1px var(--br4);}
-#bookmarkPage.fas.fa-bookmark.text-danger::before{
-    color: var(--go2);
-    text-shadow: 0 0 1px var(--br4), 0 0 1px var(--br4), 0 0 1px var(--br4), 0 0 1px var(--br4);}
 /*Credits to Ropi #185626 on Wolvden*/@import url('https://fonts.googleapis.com/css2?family=Almendra+SC&display=swap');
 @import url('/font-awesome-4.6.3/css/font-awesome.min.css');
 :root{
@@ -72,6 +10,15 @@
     --go2: #efd071;
     --go3: #bd9929;
     --f: "Almendra SC", serif;}
+
+::-webkit-scrollbar {
+    height:0;
+	width: 0;}
+
+
+p, h1, h2, h3, h4, h5, small, medium, .custom-control-label, i, label, .mb-3, span{
+    color: white;
+}
 
 /*Gifs*/
 .welcome-image{
@@ -97,6 +44,11 @@ a{
 a:hover{
     color:white;
     text-decoration: none;}
+
+.theme_default .breadcrumb-nav{
+    background-color: #444 !important;
+    background-image: url('https://raw.githubusercontent.com/Athiropi/Wolvden/main/Personal/Images/Vash.jpeg') !important;
+}
 
 /*Alert E.g. Finished Scouting, Pups at Risk, Etc*/
 .alert{
@@ -134,6 +86,11 @@ font-size: 0;}
     font-family: 'Font Awesome 5 Free' !important;
     content:"\f091";}
 
+#header{
+    margin-right: 0;
+    margin-left: 22%;
+}
+
 /*Main*/
 .navbar-main{
     background-image: linear-gradient(to bottom,black,var(--br5)), url('https://raw.githubusercontent.com/Athiropi/Wolvden/main/Personal/Images/Vash.jpeg');
@@ -165,7 +122,7 @@ font-size: 0;}
     border-left: 2px solid var(--go2);
     border-right: 2px solid var(--go1);
     color: var(--go2);}
-#header .navbar-status a{
+#header .navbar-status span, .navbar-status .fa{
     color: var(--go2);}
 #header .navbar-status .navbar-nav .nav-link .fa:hover{
     color: white;}
@@ -176,7 +133,7 @@ font-size: 0;}
     font-size: small;
     color:var(--br4);
     padding-top:15px;
-    content:"WIP css by #185626";
+    content:"css by #185626";
 }
 
 /*Breadcrumb*/
@@ -213,12 +170,11 @@ font-size: 0;}
 }
 /*Main Container*/
 #main{
+    margin-left:30%;
     padding-bottom:10%;
-    /*
     flex: 0 0 100% !important;
     max-width: 100% !important;
     align-content: center !important;
-    */
     background-color: rgba(0,0,0,0.1);
     border-radius: 0px 200px;
     border: 2px solid var(--go2);
@@ -358,7 +314,7 @@ font-size: 0;}
     color: var(--go2);
     text-shadow: 0px 0px 0px black;
     padding-right:1%;}
-#main .card.mb-3 a img{
+#main .card.mb-3 a img, #sidebar .w-50:first-child > a img:first-child{
     background-color: rgba(0,0,0,0);
     border:2px solid var(--go2);
     border-radius: 100px 100px 0px 0px;}
@@ -386,8 +342,7 @@ font-size: 0;}
 /*Featured Wolf*/
 #lblFeaturedWolfTitle{
     color: var(--go1);
-    text-shadow: 0px 0px 1px black;
-}
+    text-shadow: 0px 0px 1px black;}
 #main .featured-wolf a img{
     border:2px solid var(--go2);
     border-radius: 100px 100px 0px 0px;}
@@ -431,7 +386,7 @@ form .card-body a span{
     border-left: 1px solid var(--go2);
     border-right: 1px solid var(--go2);}
 .bg-success{
-    background-image: linear-gradient(to right, var(--go12), white) !important;
+    background-image: linear-gradient(to right, var(--go1), white) !important;
     border:1px solid var(--go1)}
 .bg-warning{
     background-image: linear-gradient(to right, var(--go2), var(--go1))!important;
@@ -445,6 +400,33 @@ form .card-body a span{
 .bg-info{
     background-image: linear-gradient(to right, var(--br1), var(--br4))!important;
     border:1px solid var(--br4)}
+
+
+
+#sidebar{
+    margin-left:0.5%;
+    display:flex;
+    position: fixed;
+    background: rgba(255,0,0,0);
+    z-index: 100;
+    left:0;
+    bottom:0;
+    padding:0;
+    flex-direction:column;
+    height:100%;
+    overflow-y: scroll;
+    scrollbar-width: none;}
+#sidebar .card{
+    background-color:#444;
+    width:80%;
+    border-radius: 30px 30px 30px 30px;
+    border: 1px solid var(--go1);}
+@media (max-width: 1200px){
+    #sidebar{display: none;}
+    #main{margin:auto;}
+    #header{margin:auto;}
+}
+
 
 
 /*
@@ -490,7 +472,7 @@ form .card-body a span{
     padding:0}
 */
 
-/* Scrollable Sidebar*/
+/* Scrollable Sidebar but fucked*/
 /*
 #sidebar{
     display:flex;
@@ -573,7 +555,6 @@ form .card-body a span{
     transform: translateX(100%);
     background: rgba(0,0,0,0.5);}
 */
-
 
 
 
