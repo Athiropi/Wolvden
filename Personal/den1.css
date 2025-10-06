@@ -105,7 +105,7 @@ font-size: 0;}
     flex-grow: 1;
     flex-direction: row;
     justify-content: flex-end;}
-#header .navbar-main .nav-item a{;
+#header .navbar-main .nav-item a{
     font-size: 0;}
 #header .navbar-main .nav-item a:hover{
     transition: 0.5s;
