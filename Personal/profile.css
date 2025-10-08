@@ -6,6 +6,7 @@ a@font-face{
     font-family:"GFS Didot";
     src:url("https://raw.githubusercontent.com/Athiropi/Wolvden/main/Personal//Font/GFSDidot-Regular.ttf")
 }
+@import url('https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap');
 
 :root{
     font-family: "Oradano Micho", Arial, sans-serif;
