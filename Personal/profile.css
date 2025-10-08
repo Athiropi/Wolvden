@@ -3,7 +3,13 @@
 /* Like I genuinely want to cry, it looked so much better with the Oradano Micho font*/
 /* So genuinely if you find out how to upload a font without needing to use an api that would be huge*/
 /* Issue: Wolvden doesn't seem to detect font (.ttf) though it works fine through Stylus*/
-@import url('https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap');
+
+/* Update: Figured it out. Following the url link, it downloads the file.
+   The ones that work (see @import) link to a css file which then has a static font page.
+   HAVING SAID THAT THE STATIC FILE ALSO LINKS TO A DOWNLOAD SO IDFK*/
+/*@import url('https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap');*/
+
+@import url("https://fonts.googleapis.com/css2?family=GFS+Didot&family=Special+Elite&display=swap");
 
 @font-face{
     font-family: "Oradano Micho";
@@ -23,7 +29,7 @@
 
 :root{
     /*Replace with Oradano Micho*/
-    font-family: "Oradano Micho", Arial, sans-serif;
+    font-family: "Special Elite", system-ui;
     --key: #5fd4ff;
 }
 
