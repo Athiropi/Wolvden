@@ -245,7 +245,7 @@ body{
     min-width: 100%;
     border:5px double white;
     border-radius: 5px;
-    background: #444;
+    background: #222;
     background-image: url('https://raw.githubusercontent.com/Athiropi/Wolvden/main/Personal/Images/wallpaper.jpeg');
     background-blend-mode: multiply;
     background-size:contain;
