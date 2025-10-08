@@ -37,7 +37,7 @@
 
 :root{
     /*Replace with Oradano Micho*/
-    font-family: "Special Elite";
+    --f: "Special Elite";
     --key: #5fd4ff;
 }
 
@@ -61,7 +61,7 @@ a:hover{
 
 body{
     /*Replace with Oradano Micho*/
-    font-family:"GFS Didot",serif;
+    font-family: var(--f);
     background: url("https://raw.githubusercontent.com/Athiropi/Wolvden/main/Personal/Images/AlterEgoBackground.gif");
     background-size: cover;
     background-repeat:no-repeat;
