@@ -1,4 +1,9 @@
-a@font-face{
+
+/* I'M SO PISSED I CAN'T USE THE FONT-FACE FONTS*/
+/* Like I genuinely want to cry, it looked so much better with the Oradano Micho font*/
+/* So genuinely if you find out how to upload a font without needing to use an api that would be huge*/
+/* Issue: Wolvden doesn't seem to detect font (.ttf) though it works fine through Stylus*/
+@font-face{
     font-family: "Oradano Micho";
     src: url("https://raw.githubusercontent.com/Athiropi/Wolvden/main/Personal//Font/OradanoGSRR.ttf");
 }
@@ -8,8 +13,15 @@ a@font-face{
 }
 @import url('https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap');
 
+.gfs-didot-regular {
+  font-family: "GFS Didot", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 :root{
-    font-family: "Oradano Micho", Arial, sans-serif;
+    /*Replace with Oradano Micho*/
+    font-family: "GFS Didot", Arial, sans-serif;
     --key: #5fd4ff;
 }
 
@@ -32,7 +44,8 @@ a:hover{
 }
 
 body{
-    font-family:"Oradano Micho", Arial, sans-serif;
+    /*Replace with Oradano Micho*/
+    font-family:"GFS Didot", Arial, sans-serif;
     background: url("https://raw.githubusercontent.com/Athiropi/Wolvden/main/Personal/Images/AlterEgoBackground.gif");
     background-size: cover;
     background-repeat:no-repeat;
@@ -43,7 +56,8 @@ body{
 #sidebar{
     background: black;
     z-index: 100;
-    font-family: "Oradano Micho", Arial, sans-serif;
+    /*Replace with Oradano Micho*/
+    font-family: "GFS Didot", Arial, sans-serif;
     position: fixed;
     bottom: 0;
     left: 0;
