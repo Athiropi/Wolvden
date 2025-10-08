@@ -3,6 +3,8 @@
 /* Like I genuinely want to cry, it looked so much better with the Oradano Micho font*/
 /* So genuinely if you find out how to upload a font without needing to use an api that would be huge*/
 /* Issue: Wolvden doesn't seem to detect font (.ttf) though it works fine through Stylus*/
+@import url('https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap');
+
 @font-face{
     font-family: "Oradano Micho";
     src: url("https://raw.githubusercontent.com/Athiropi/Wolvden/main/Personal//Font/OradanoGSRR.ttf");
@@ -11,7 +13,7 @@
     font-family:"GFS Didot";
     src:url("https://raw.githubusercontent.com/Athiropi/Wolvden/main/Personal//Font/GFSDidot-Regular.ttf")
 }
-@import url('https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap');
+
 
 .gfs-didot-regular {
   font-family: "GFS Didot", serif;
