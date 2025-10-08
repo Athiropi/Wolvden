@@ -6,7 +6,9 @@
 
 /* Update: Figured it out. Following the url link, it downloads the file.
    The ones that work (see @import) link to a css file which then has a static font page.
-   HAVING SAID THAT THE STATIC FILE ALSO LINKS TO A DOWNLOAD SO IDFK*/
+   HAVING SAID THAT THE STATIC FILE ALSO LINKS TO A DOWNLOAD SO IDFK
+   Not to mention the original worked on my own site so ¯\_(ツ)_/¯*/
+
 /*@import url('https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap');*/
 
 @import url("https://fonts.googleapis.com/css2?family=GFS+Didot&family=Special+Elite&display=swap");
@@ -243,6 +245,7 @@ body{
     min-width: 100%;
     border:5px double white;
     border-radius: 5px;
+    background: #444;
     background-image: url('https://raw.githubusercontent.com/Athiropi/Wolvden/main/Personal/Images/wallpaper.jpeg');
     background-blend-mode: multiply;
     background-size:contain;
