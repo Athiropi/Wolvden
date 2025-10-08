@@ -7,11 +7,11 @@
 
 @font-face{
     font-family: "Oradano Micho";
-    src: url("https://raw.githubusercontent.com/Athiropi/Wolvden/main/Personal//Font/OradanoGSRR.ttf");
+    src: url("https://raw.githubusercontent.com/Athiropi/Wolvden/main/Personal/Font/OradanoGSRR.ttf");
 }
 @font-face{
     font-family:"GFS Didot";
-    src:url("https://raw.githubusercontent.com/Athiropi/Wolvden/main/Personal//Font/GFSDidot-Regular.ttf")
+    src:url("https://raw.githubusercontent.com/Athiropi/Wolvden/main/Personal/Font/GFSDidot-Regular.ttf")
 }
 
 
@@ -23,7 +23,7 @@
 
 :root{
     /*Replace with Oradano Micho*/
-    font-family: "GFS Didot", serif;
+    font-family: "Oradano Micho", Arial, sans-serif;
     --key: #5fd4ff;
 }
 
