@@ -270,6 +270,7 @@ body{
     font-family: "GFS Didot",serif;
     border: 4px double white;
     border-radius: 15px;
+    color: white;
 }
 
 .table{
@@ -287,6 +288,10 @@ body{
 
 .alert{color: white;}
 .alert a{color: var(--key);}
+
+table{color:white;}
+.left.b{background-color: #222;}
+#main > table.table.mt-3 > tbody > tr:nth-child(6) > td.right > span{color: var(--key) !important;}
 
 
 
