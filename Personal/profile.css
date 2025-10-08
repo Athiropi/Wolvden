@@ -23,7 +23,7 @@
 
 :root{
     /*Replace with Oradano Micho*/
-    font-family: "GFS Didot", Arial, sans-serif;
+    font-family: "GFS Didot", serif;
     --key: #5fd4ff;
 }
 
@@ -47,7 +47,7 @@ a:hover{
 
 body{
     /*Replace with Oradano Micho*/
-    font-family:"GFS Didot", Arial, sans-serif;
+    font-family:"GFS Didot",serif;
     background: url("https://raw.githubusercontent.com/Athiropi/Wolvden/main/Personal/Images/AlterEgoBackground.gif");
     background-size: cover;
     background-repeat:no-repeat;
@@ -59,7 +59,7 @@ body{
     background: black;
     z-index: 100;
     /*Replace with Oradano Micho*/
-    font-family: "GFS Didot", Arial, sans-serif;
+    font-family: "GFS Didot", sans-serif;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -263,7 +263,7 @@ body{
 
 #fraProfileHTML{
     background-color: #222;
-    font-family: "GFS Didot";
+    font-family: "GFS Didot",serif;
     border: 4px double white;
     border-radius: 15px;
 }
