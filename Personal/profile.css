@@ -234,7 +234,7 @@ body{
     min-width: 100%;
     border:5px double white;
     border-radius: 5px;
-    background-color: #444;
+    background-color: #222;
     background-image: url('https://raw.githubusercontent.com/Athiropi/Wolvden/main/Personal/Images/wallpaper.jpeg');
     background-blend-mode: multiply;
     background-size:contain;
@@ -286,7 +286,10 @@ body{
     box-shadow: 0px 0px 30px white;
 }
 
-.alert{color: white;}
+.alert{
+    color: white;
+    text-align: center;
+}
 .alert a{color: var(--key);}
 
 table{color:white;}
