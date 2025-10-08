@@ -27,6 +27,7 @@
     --f: "Special Elite";
     --key: #5fd4ff;
     color: white;
+    font-family: var(--f);
 }
 
 ::-webkit-scrollbar {
