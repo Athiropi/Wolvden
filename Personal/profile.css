@@ -1,0 +1,521 @@
+a@font-face{
+    font-family: "Oradano Micho";
+    src: url("https://raw.githubusercontent.com/Athiropi/Wolvden/main/Personal//Font/OradanoGSRR.ttf");
+}
+@font-face{
+    font-family:"GFS Didot";
+    src:url("https://raw.githubusercontent.com/Athiropi/Wolvden/main/Personal//Font/GFSDidot-Regular.ttf")
+}
+
+:root{
+    font-family: "Oradano Micho", Arial, sans-serif;
+    --key: #5fd4ff;
+}
+
+::-webkit-scrollbar {
+    height:0;
+	width: 0;
+}
+
+.alert{
+    background-color: #222;
+    border:4px double white;
+}
+
+a{
+    color:white;
+}
+a:hover{
+    text-decoration: none;
+    color: var(--key);
+}
+
+body{
+    font-family:"Oradano Micho", Arial, sans-serif;
+    background: url("https://raw.githubusercontent.com/Athiropi/Wolvden/main/Personal/Images/AlterEgoBackground.gif");
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+#sidebar{
+    background: black;
+    z-index: 100;
+    font-family: "Oradano Micho", Arial, sans-serif;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    min-width:100%;
+    height: 8%;
+    justify-content:center;
+    padding: 0;
+    border-top:4px double white;
+}
+
+#sidebar .no-gutters{
+    display:flex;
+    flex-direction: row;
+}
+#sidebar .card{
+    height:640px;
+    border: 3px double white;
+}
+#sidebar .card-title{
+    background: black;
+    font-size: 30px;
+    text-align: center;
+    height:100%
+}
+#sidebar .card-body{
+    background:black;
+    text-align: center;
+    border: 3px double white;
+    width:100%;
+}
+
+/*Chat*/
+#sidebar .no-gutters #card-chat:hover{
+    position: relative;
+    bottom: 1130%;
+    border: 0;
+    height:100%;
+}
+#chatboxContainer{
+    background: #313131;
+}
+
+/*Report*/
+#sidebar > div:nth-child(2) > form > button{
+    opacity: 1;
+    padding-top:12px;
+    background: var(--key);
+}
+#sidebar > div:nth-child(2) > form > button:before{
+    font-family:'Font Awesome 5 Free' !important;
+    content:"\f188";
+    font-size:30px;
+    padding-bottom: 10px;
+}
+
+/*Activity*/
+#sidebar > div:nth-child(2) > div.card.d-none.d-lg-inline-block:hover, #sidebar > div.multi-column.no-gutters > div.card.d-lg-none:hover{
+    position: relative;
+    bottom: 110%;
+    border: 0;
+    height:100%;
+}
+
+/*Bookmarks*/
+#sidebar > div.multi-column.no-gutters > div:nth-child(4):hover{
+    position: relative;
+    bottom: 500%;
+    height: 100%;
+}
+#sidebar > div.multi-column.no-gutters > div:nth-child(4) .card-body{
+    padding-bottom: 30px;
+}
+#sidebar .bookmarks{
+    position: relative;
+    bottom:85%;
+    height: 100%;
+    text-align:start;
+    padding:0;
+    overflow:scroll;
+}
+#sidebar .bookmarks .fa{
+    display:none;
+}
+
+/*Stats*/
+#sidebar .multi-column.no-gutters .card:nth-last-child(3):hover{
+    position: relative;
+    bottom:330%;
+}
+#sidebar .multi-column.no-gutters .card:nth-last-child(3):before{
+    content: "Stats";
+    padding: 5%;
+    font-size:30px;
+    background: black;
+}
+
+/*Wolf*/
+#sidebar .multi-column.no-gutters .card:nth-last-child(4):hover{
+    position:relative;
+    bottom:330%;
+}
+#sidebar .multi-column.no-gutters .card:nth-last-child(4) h3{
+    font-size: 30px;
+}
+
+/*Event*/
+#sidebar .multi-column.no-gutters .card:nth-last-child(5):hover{
+    position:relative;
+    bottom:200%;
+}
+
+#sidebar .multi-column.no-gutters .card:nth-last-child(5):hover .m-1{
+    position: relative;
+    bottom:89%;
+}
+
+
+
+/*Header*/
+#header {
+    min-width:100% !important;
+    margin:0;
+}
+#header .navbar-main{
+    background-image: linear-gradient(to bottom , #000, rgb(51, 51, 51));
+}
+#main-menu .navbar-nav{
+    flex: 0 0 100%;
+    justify-content: space-evenly;
+    margin:0;
+}
+
+
+#header #main-menu .fa:hover, #header #main-menu a:hover .fa, #header .navbar-status a:hover{
+    color:var(--key);
+}
+#header #main-menu a:hover, #header .navbar-status a{
+    color: white;
+}
+
+#header .navbar-status{
+    background-image: linear-gradient(to bottom, rgb(50, 48, 48), rgb(74, 74, 74));
+    border-bottom: 4px double white;
+    border-top: 4px double #666;
+}
+#header .navbar-status .navbar-nav:before{
+    content:"CSS by #185626";
+    padding-top:10px;
+    color:#666;
+}
+
+#header .breadcrumb-nav{
+    display: none;
+}
+#header:after{
+    position:absolute;
+    content:"Ropi (#185626)";
+    left:35%;
+    top:40%;
+    font-size:60px;
+    color: rgba(200,200,200,0.4);
+}
+
+
+#main{
+    margin-top: 27rem;
+    min-width: 100%;
+    border:5px double white;
+    border-radius: 5px;
+    background-image: url('https://raw.githubusercontent.com/Athiropi/Wolvden/main/Personal/Images/wallpaper.jpeg');
+    background-blend-mode: multiply;
+    background-size:contain;
+}
+
+#main h1{
+    display:none;
+}
+#main img{
+    border: 2px double white;
+    border-radius: 5px;
+}
+#main .nav-tabs{
+    justify-content: space-evenly;
+    border:0;
+}
+#main .nav-tabs .nav-link{
+    padding:20px;
+    padding-left:100px;
+    padding-right:100px;
+    font-size: 20px;
+    background-color: #222;
+    color:white;
+    border: 5px double white;
+    border-radius: 15px;
+}
+#main .nav-tabs .nav-link:hover{
+    box-shadow: 0px 0px 5px;
+}
+
+#fraProfileHTML{
+    background-color: #222;
+    font-family: "GFS Didot";
+    border: 4px double white;
+    border-radius: 15px;
+}
+
+.table{
+    background-color: #222;
+    border: 3px double white;
+}
+
+.user-tag{
+    margin-right:20%;
+    width:100%;
+    border: 5px double white !important;
+    border-radius: 5px;
+    box-shadow: 0px 0px 30px white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+a, small, b, p, span{
+    text-decoration: none !important;
+}
+
+.container{
+    font-family: "Oradano Micho", Arial, sans-serif;
+    margin: auto;
+    width:100% !important;
+    justify-content: center !important;
+}
+
+.container .row{
+    margin: auto;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center !important;}
+
+#main{
+    margin-top: 1rem;
+    min-width:100%;
+visibility: hidden;}
+
+#sidebar{
+    position:fixed;
+    bottom: 0;
+    left:0;
+    display: flex;
+    flex-direction: row;
+    min-width: 100%;
+    height: 10%;}
+
+#sidebar .no-gutters{
+    display: flex;
+    flex-direction: row;
+    height: 10%;
+    bottom: 0;
+    left: 0;}
+
+#sidebar .no-gutters .card{
+    padding:0;
+    border: 1px solid gold;}
+
+#sidebar .no-gutters:first-child{
+    flex: 0 0 60%;}
+
+#sidebar .no-gutters:last-child .mb-3{
+    order: 3;
+    background: rgba(0,0,0,0);}
+
+#sidebar .no-gutters .card-title{
+    visibility: collapse;}
+
+#sidebar .no-gutters #card-chat:hover{
+    border: 0;
+    position: relative;
+    bottom:580px;
+    opacity:1;}
+#sidebar .no-gutters #card-chat:before{
+    display:inline-block;
+    position:relative;
+    background:black;
+    opacity:1 !important;
+    content: "Chat";
+    text-align: center;
+    font-size:48px}
+#sidebar .no-gutters #card-chat:hover:before{
+    display:none;}
+
+#sidebar > div:nth-child(2) > div.card.d-none.d-lg-inline-block:hover{
+    border: 0;
+    position: relative;
+    bottom:40px;
+    opacity:1;
+    font-size: 17px}
+#sidebar > div:nth-child(2) > div.card.d-none.d-lg-inline-block:before{
+    display: inline-block;
+    position: relative;
+    background:black;
+    opacity:1 !important;
+    content: "Activity";
+    text-align: center;
+    font-size:48px;}
+#sidebar > div:nth-child(2) > div.card.d-none.d-lg-inline-block:hover:before{
+    display:none;}
+*/
+
+/*
+#sidebar{
+    position: fixed;
+    display: flex;
+    z-index: 100;
+    flex-direction: row;
+    bottom: 0;
+    left: 0;
+    min-width: 100%;
+    height: 10%;
+    padding:0;
+overflow: scroll;}
+
+#sidebar .no-gutters{
+    min-width:50%;
+    display: flex;
+    overflow: hidden;}
+
+#sidebar .no-gutters .card {
+    vertical-align: bottom;
+    margin:0;
+    border: 0;
+    justify-content:flex-end;
+    flex-direction:column;}
+
+#sidebar .no-gutters .card-body{
+    bottom:0;
+    padding:0;
+    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;}
+*/
+
+/*
+#sidebar{
+    background: rgba(0,255,0,1);
+    z-index: 100;
+    position:fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    bottom:0;
+    left:0;
+    height:55%;
+    min-width:100%;
+    overflow: hidden;}
+
+#sidebar .no-gutters{
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    background: rgba(0,0,0,0);}
+
+#sidebar .no-gutters:last-child *{
+}
+
+#sidebar .card{
+    background: rgba(255,0,0,1);
+    height:100%;
+    }
+
+#sidebar .card-body {
+    display:flex;
+    flex-direction: column-reverse;
+    height: 50%;
+    background: rgba(0,0,0,0);
+    border:0;}
+
+#sidebar .no-gutters:last-child .mb-3{
+    order:3;
+    bottom: 0;}
+
+#sidebar .card:hover {
+    height: 10%;}
+
+#card-chat{
+    flex: 0 0 50%;}
+*/
+
+
+
+
+@media (max-width: 1100px){
+    #sidebar .no-gutters:first-child{
+        flex: 0 0 100%;
+    }
+    #sidebar .no-gutters:last-child{
+        display:none;
+        }
+}
+@media(max-width: 1000px){
+    #header:after{
+        left:25%;
+        top:40%;
+    }
+    #main .nav-tabs .nav-link{
+        padding:20px;
+    }
+}
