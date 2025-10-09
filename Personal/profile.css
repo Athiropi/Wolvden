@@ -15,7 +15,7 @@
 
 @font-face{
     font-family: "Oradano Micho";
-    src: url("https://raw.githubusercontent.com/Athiropi/Wolvden/main/Personal/Font/OradanoGSRR.ttf");
+    src: url("https://raw.githubusercontent.com/Athiropi/Wolvden/main/Personal/Font/OradanoGSRR.ttf" format("truetype"));
 }
 @font-face{
     font-family:"GFS Didot";
@@ -24,7 +24,7 @@
 
 :root{
     /*Replace with Oradano Micho*/
-    --f: "Special Elite";
+    --f: "Oradano Micho";
     --key: #5fd4ff;
     color: white;
     font-family: var(--f);
