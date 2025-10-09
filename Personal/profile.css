@@ -13,9 +13,14 @@
 
 @import url("https://fonts.googleapis.com/css2?family=GFS+Didot&family=Special+Elite&display=swap");
 
+@font-face {
+	font-family: 'Angel Wish';
+	src: url('https://veratuesday.github.io/VeraTuesday/Angelwish.ttf') format('truetype');
+}
+
 @font-face{
     font-family: "Oradano Micho";
-    src: url("https://raw.githubusercontent.com/Athiropi/Wolvden/main/Personal/Font/OradanoGSRR.ttf" format("truetype"));
+    src: url("https://raw.githubusercontent.com/Athiropi/Wolvden/main/Personal/Font/OradanoGSRR.ttf") format("truetype");
 }
 @font-face{
     font-family:"GFS Didot";
@@ -129,12 +134,12 @@ body{
 }
 
 /*Bookmarks*/
-#sidebar > div.multi-column.no-gutters > div:nth-last-child(1):hover{
+#sidebar > div.multi-column.no-gutters > div:nth-last-child(2):hover{
     position: relative;
     bottom: 500%;
     height: 100%;
 }
-#sidebar > div.multi-column.no-gutters > div:nth-child(1) .card-body{
+#sidebar > div.multi-column.no-gutters > div:nth-child(2) .card-body{
     padding-bottom: 30px;
 }
 #sidebar .bookmarks{
