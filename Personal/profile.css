@@ -129,12 +129,12 @@ body{
 }
 
 /*Bookmarks*/
-#sidebar > div.multi-column.no-gutters > div:nth-child(4):hover{
+#sidebar > div.multi-column.no-gutters > div:nth-last-child(1):hover{
     position: relative;
     bottom: 500%;
     height: 100%;
 }
-#sidebar > div.multi-column.no-gutters > div:nth-child(4) .card-body{
+#sidebar > div.multi-column.no-gutters > div:nth-child(1) .card-body{
     padding-bottom: 30px;
 }
 #sidebar .bookmarks{
