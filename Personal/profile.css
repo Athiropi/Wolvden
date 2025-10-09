@@ -181,6 +181,31 @@ body{
     bottom:89%;
 }
 
+/*current Quests*/
+#sidebar .multi-column.no-gutters .card:nth-last-child(6):hover{
+    position:relative;
+    bottom:400%;
+}
+
+#sidebar .multi-column.no-gutters .card:nth-last-child(6):hover .m-1{
+    position: relative;
+    bottom:89%;
+}
+
+/*Melvin*/
+#sidebar .multi-column.no-gutters .card:nth-last-child(7):hover{
+    position:relative;
+    bottom:150%;
+}
+#sidebar .multi-column.no-gutters .card:nth-last-child(7) img{
+    display:none;
+}
+
+#sidebar .multi-column.no-gutters .card:nth-last-child(7):hover .m-1{
+    position: relative;
+    bottom:89%;
+}
+
 
 
 /*Header*/
