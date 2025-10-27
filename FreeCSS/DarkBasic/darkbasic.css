@@ -179,6 +179,12 @@ color: var(--hi3)}
     filter: grayscale(100%);}
 #sidebar .card:hover img{
     filter: grayscale(0%);}
+.breadcrumb.col-lg-9.ml-auto.text-break::after {
+	content: "CSS by #185626";
+	color: var(--hi1);
+	font-size: 14px;
+	position: absolute;
+	right: 2rem;}
 
 /*Footer*/
 #footer{
