@@ -1,0 +1,164 @@
+:root{
+    --bg1: black;
+    --bg2: #222;
+    --bg3: #444;
+    --hi1: white;
+    --hi2: #ddd;
+    --hi3: #bbb;
+    --hi4: #999;
+    --hi5: #777;
+    --gol: #d4b145;
+    --war: #e3bb41;
+    --pri: #006080;
+    --dan: #cc3d3d;
+    --inf: #3990be;}
+
+body{
+    background: url("https://raw.githubusercontent.com/Athiropi/Wolvden/main/FreeCSS/DarkBasic/DarkForestBackground.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: "Garamond", serif;}
+
+a{
+    text-decoration: none;
+color: white;}
+a:hover{
+    text-decoration: none;
+    color: var(--hi1)}
+
+.btn{
+    color: var(--hi3);
+    background: var(--bg2);
+    border: 1px solid var(--bg3);}
+.btn:hover{
+    color: var(--hi1);
+    background: var(--bg3);
+    border: var(--hi3);}
+
+/*Top-third of header*/
+#header .navbar-main{
+    background: rgba( 0,0,0,0.8)}
+#header .navbar-main .nav-link{
+    color: var(--hi2);}
+#header .navbar-main .nav-item a:hover, #header .navbar-status a:hover{
+    color: var(--hi1);
+    text-shadow:0px 0px 15px var(--hi1);}
+#header .navbar-main .nav-item:hover .fa{
+    color: var(--hi2)}
+
+/*Second-third of header*/
+#header .navbar-status{
+    background: rgba(0,0,0,0);
+    color: var(--hi3)}
+#header .navbar-status a{
+    color: var(--hi3);}
+#header .navbar-status .icon{
+    display: none;}
+#header .navbar-status .user_current_sc:before{
+    color:var(--hi2);
+    content: "\f51e";
+    font-family: 'Font Awesome 5 Free' !important;}
+#header .navbar-status .user_current_gc:before{
+    color:var(--gol);
+    content: "\f51e";
+    font-family: 'Font Awesome 5 Free' !important;
+}
+
+/*Final-third of header*/
+#header .breadcrumb-nav{
+    margin-bottom: 1rem;
+    background: rgba(0,0,0,0.6)}
+#header .breadcrumb-nav a{
+    color: var(--bg3);}
+#bookmarkPage.fas.fa-bookmark.text-danger::before{
+    color: var(--bg3);}
+
+
+
+/*Main Content*/
+#main{
+    background: rgba(0,0,0,0.5);
+    color:var(--hi1);}
+#main > h1{
+    text-align: center;
+    font-size: 50px;}
+
+/*Den & Profile Links*/
+#main .nav-tabs{
+    justify-content: center;
+    border: 0;}
+#main .nav-tabs .nav-link{
+    color: var(--hi3);
+    background: rgba(0,0,0,0);
+    border: 0;}
+#main .nav-tabs .nav-link:hover{
+    color: white;
+    text-shadow: 0px 0px 15px var(--hi1);}
+
+/*Tables*/
+#main table a, #main table i{
+    color:var(--hi1);}
+#main table{
+    color:var(--hi3);
+    border: 0}
+#main table th{
+    background: rgba(0,0,0,0.3);
+    text-align: center;}
+#main table tr{
+    background: rgba(0,255,0,0);
+    text-align: center;}
+#main table td{
+    background: 0;}
+#main .card-body, form .card-body .bg-dark{
+    background: rgba(0,0,0,0.2) !important;}
+#main .card{
+    background: rgba(0,0,0,0.2)}
+#main table .card img, #denCards img{
+    filter: grayscale(100%);}
+#main table .card:hover img, #denCards img:hover{
+    filter:grayscale(0%);}
+#main table .bg-warning{
+    background: var(--hi2) !important;}
+#main table .card:hover .bg-warning{
+    background: var(--war) !important;}
+#main table .bg-primary{
+    background: var(--hi3) !important;}
+#main table .card:hover .bg-primary{
+    background: var(--pri) !important;}
+#main table .bg-danger{
+    background: var(--hi4) !important;}
+#main table .card:hover .bg-danger{
+    background: var(--dan) !important;}
+#main table .bg-info{
+    background: var(--hi5) !important;}
+#main table .card:hover .bg-info{
+    background: var(--inf) !important;}
+#main table .bg-success{
+    background: var(--hi2) !important;}
+#main table .card:hover .bg-success{
+    background: var(--war) !important;}
+#main table .badge{
+    background: var(--bg2);
+}
+
+/*Sidebar*/
+#sidebar{
+    background: rgba(0,0,0,0.5);
+color: var(--hi3)}
+#sidebar .card{
+    background: rgba(0,0,0,0.6);
+    border: 0;}
+.progress{
+    background: black !important;}
+#progress-energy,#progress-hunger, #progress-hp, #progress-xp{
+    background-image: linear-gradient(to right, white, black);}
+#sidebar img{
+    filter: grayscale(100%);}
+#sidebar .card:hover img{
+    filter: grayscale(0%);}
+
+/*Footer*/
+#footer{
+    background: rgba(0,0,0,0.8);
+    margin-top: 1rem;}
