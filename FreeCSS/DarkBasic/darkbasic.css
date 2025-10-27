@@ -13,6 +13,11 @@
     --dan: #cc3d3d;
     --inf: #3990be;}
 
+.navbar-brand{
+    filter: grayscale(100%);}
+.navbar-brand:hover{
+    filter:grayscale(0%);}
+
 body{
     background: url("https://raw.githubusercontent.com/Athiropi/Wolvden/main/FreeCSS/DarkBasic/DarkForestBackground.jpeg");
     background-size: cover;
