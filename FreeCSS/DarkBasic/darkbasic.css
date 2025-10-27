@@ -36,6 +36,14 @@ a:hover{
     background: var(--bg3);
     border: var(--hi3);}
 
+/*Alert*/
+.alert{
+    background: var(--bg2);
+    color: var(--hi4);
+    border: 1px solid var(--hi3)}
+.alert-link{
+    color: white !important;}
+
 /*Top-third of header*/
 #header .navbar-main{
     background: rgba( 0,0,0,0.8)}
@@ -148,7 +156,6 @@ a:hover{
     background: var(--bg3) ;
     color: var(--hi5);}
 
-
 /*Sidebar*/
 #sidebar{
     background: rgba(0,0,0,0.5);
@@ -156,6 +163,9 @@ color: var(--hi3)}
 #sidebar .card{
     background: rgba(0,0,0,0.6);
     border: 0;}
+#sidebar span{
+    color: var(--hi3)
+}
 .progress{
     background: black !important;}
 #progress-energy,#progress-hunger, #progress-hp, #progress-xp{
@@ -169,3 +179,11 @@ color: var(--hi3)}
 #footer{
     background: rgba(0,0,0,0.8);
     margin-top: 1rem;}
+
+/*Profile Add-ons*/
+#main > table.table.mt-3 > tbody > tr:nth-child(6) > td.right > span{
+    color: white !important;}
+.table img{
+    filter: grayscale(100%);}
+.table .mb-2:hover img, .table .mb-3:hover img{
+    filter: grayscale(0%);}
