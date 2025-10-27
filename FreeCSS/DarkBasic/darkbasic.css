@@ -110,6 +110,10 @@ a:hover{
     text-align: center;}
 #main table td{
     background: 0;}
+#main .form-control{
+    background: var(--bg2);
+    border: 1px solid var(--bg3);
+    color: var(--hi4);}
 #main .card-body, form .card-body .bg-dark{
     background: rgba(0,0,0,0.2) !important;}
 #main .card{
@@ -138,9 +142,12 @@ a:hover{
     background: var(--hi2) !important;}
 #main table .card:hover .bg-success{
     background: var(--war) !important;}
-#main table .badge{
-    background: var(--bg2);
-}
+#main table .badge, #main .bg-bar-input{
+    background: var(--bg2);}
+#main .bg-bar-input button{
+    background: var(--bg3) ;
+    color: var(--hi5);}
+
 
 /*Sidebar*/
 #sidebar{
