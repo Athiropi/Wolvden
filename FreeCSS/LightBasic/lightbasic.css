@@ -1,1 +1,157 @@
+@font-face{
+    font-family: "Poiret";
+    src: url("https://raw.githubusercontent.com/Athiropi/Wolvden/main/FreeCSS/LightBasic/PoiretOne-Regular.ttf") format("truetype");
+}
 
+:root{
+    --bg1: #fff;
+    --bg2: #ddd;
+    --bg3: #bbb;
+    --bg4: #999;
+    --bg5: #777;
+    --hi1: #e4fbff;
+    --hi2: #b4dfe5;
+    --hi3: #9ccacf;
+    --hi4: #7fb4bd;
+    --gc: #fffba7;}
+
+a{
+    color: var(--hi1);
+    text-decoration: none;}
+a:hover{
+    color: white;
+    text-decoration: none;}
+
+body{
+    font-family: "Poiret";
+    background: url("https://raw.githubusercontent.com/Athiropi/Wolvden/main/FreeCSS/LightBasic/LightBasicBackground.jpeg");
+    background-size: cover;
+    background-attachment: fixed;}
+
+/*Top of header*/
+#header .navbar-main{
+    background: rgba(255,255,255,0.7)}
+#main-menu, #main-menu .fa{
+    background: url("https://raw.githubusercontent.com/Athiropi/Wolvden/main/FreeCSS/LightBasic/LightBasicBackground.jpeg") -20px -20px repeat;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;}
+#header .navbar-main .nav-item a:hover, #header .navbar-status a:hover{
+    text-shadow: 0 0 0px white;
+}
+
+/*Middle of header*/
+#header .navbar-status{
+    background: rgba(255,255,255,0.4);
+    color: var(--hi2)}
+#header .navbar-status a{
+    color: var(--hi1)}
+#header .navbar-status a:hover{
+    color: white;}
+#header .navbar-status .icon{
+    display: none;}
+#header .navbar-status .user_current_sc:before{
+    color:var(--bg1);
+    content: "\f51e";
+    font-family: 'Font Awesome 5 Free' !important;}
+#header .navbar-status .user_current_gc:before{
+    color:var(--gc);
+    content: "\f51e";
+    font-family: 'Font Awesome 5 Free' !important;}
+
+/*Bottom of header*/
+#header .breadcrumb-nav{
+    background: rgba(255,255,255,0.1);
+    margin-bottom: 1rem;}
+#header .breadcrumb-nav li{
+    color: var(--hi2);}
+#bookmarkPage.fas.fa-bookmark.text-danger::before{
+    color: var(--hi1);}
+
+/*Main*/
+#main{
+    background: rgba(255,255,255,0.3)}
+#main > h1{
+    text-align: center;
+    background: url("https://raw.githubusercontent.com/Athiropi/Wolvden/main/FreeCSS/LightBasic/LightBasicBackground.jpeg") -20px -20px repeat;
+    background-size: cover;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 50px;}
+
+/*Nav Links*/
+#main .nav-tabs{
+    justify-content: space-evenly;
+    border: 0}
+#main .nav-tabs .nav-link{
+    background: rgba(255,255,255,0);
+    border: 1px solid white;
+    color: var(--hi1);}
+#main .nav-tabs .nav-link:hover{
+    background: rgba(255,255,255,0.2);
+    text-shadow: 0 0 5px white;
+    box-shadow: 0 0 5px white;
+    color: white;}
+
+/*Tables*/
+#main table{
+    border: 0;}
+#main table th{
+    background: rgba(255,255,255,0.4);
+    text-align: center;}
+#main table th a{
+    background: url("https://raw.githubusercontent.com/Athiropi/Wolvden/main/FreeCSS/LightBasic/LightBasicBackground.jpeg") -20px -20px repeat;
+    background-size: 50% 50%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;}
+#main table tr{
+    background: rgba(255,255,255,0.1);
+    color: var(--bg1)}
+#main table i{
+    color: white;}
+#main table td{
+    background: rgba(255,255,255,0.1)}
+.btn{
+    color: var(--hi1);
+    background: var(--hi3);
+    border: 0;}
+.btn:hover{
+    color: var(--bg1);
+    background: var(--bg2);}
+#main table .form-control{
+    color: white;
+    background: var(--bg2);
+    border: white;}
+#main .card .card-body, #main .card-body .bg-dark{
+    background: rgba(255,255,255,0.3) !important;}
+#main table span, #main table small{
+    color: var(--bg5);}
+.fa-venus:before{
+    color: pink;}
+.fa-mars:before{
+    color: var(--hi3);}
+.bg-warning{
+    background: #fff6ba !important;}
+.bg-primary{
+    background: #baceff !important;}
+.bg-danger{
+    background: #ffbaba !important;}
+.bg-info{
+    background: #baffe8 !important;}
+.bg-success{
+    background: #f3baff !important;}
+
+#sidebar{
+    background: rgba(255,255,255,0.4);
+    color: white;}
+#sidebar .card{
+    background: rgba(255,255,255,0.4);
+    border: 0;}
+#sidebar .progress{
+    background: rgba(255,255,255,0.5) !important;
+    color: white;
+}
+
+/*Footer*/
+#footer{
+    margin-top: 1rem;
+    background: rgba(255,255,255,0.5)}
