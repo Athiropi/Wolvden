@@ -1,0 +1,265 @@
+@font-face{
+    font-family: "Emily's Candy";
+    src: url("https://raw.githubusercontent.com/Athiropi/Wolvden/main/Fonts/EmilysCandy-Regular.ttf") format("truetype");}
+
+:root{
+    --bg1: rgb(25, 15, 36);
+    --bg2: rgb(52,30,75);
+    --bg3: rgb(92, 56, 128);
+    --mi0: rgb(74, 18, 133);
+    --mi1: rgb(117, 41, 197);
+    --mi2: rgb(156, 69, 249);
+    --hi1: rgb(229, 209, 249);
+    --hi2: rgb(194, 165, 223);
+    --al0: rgb(170, 103, 28);
+    --al1: rgb(210, 131, 41);
+    --al2: rgb(247, 162, 65);
+    --al3: rgb(255, 192, 121);
+    --re1: rgb(74,18,0);
+    --awe: 'Font Awesome 5 Free' !important;
+}
+
+body{
+    font-family: "Emily's Candy";
+    background: url("https://raw.githubusercontent.com/Athiropi/Wolvden/main/FreeCSS/HalloweenDefault/HalloweenBackground.jpeg");
+    background-size: cover;
+    background-attachment: fixed;}
+
+a, a:hover{
+    text-decoration: none;}
+
+/*CHANGE*/
+.alert{
+    border: 1px solid var(--bg3);
+    box-shadow: 0 0 3px var(--al1), 0 0 3px var(--al3);
+    background: rgba(15,25,36,0.8);
+    color: var(--al1);}
+.alert a{color: var(--al2);}
+.alert a:hover{color: var(--al3);}
+
+#header{border-radius: 0 0 10px 10px}
+
+#header .navbar-status{border: 1px groove var(--al1)}
+#header .navbar-main{
+    border-left: 1px groove var(--bg3);
+    border-right: 1px groove var(--bg3)}
+#header .breadcrumb-nav{
+    border-left: 1px groove var(--mi0);
+    border-right: 1px groove var(--mi0);
+    border-bottom: 1px groove var(--bg3)}
+
+#header .navbar-main{background: rgba(25,15,26, 0.9);}
+#main-menu .navbar-nav{
+    flex: 0 0 100%;
+    justify-content: space-between;}
+#header .navbar-main .nav-link{color: var(--bg3);}
+#header .navbar-main .nav-link:hover{color: var(--al3);}
+#header .navbar-main .nav-item .fa{display:none;}
+
+#header .navbar-status{
+    background: rgba(74,18,0,0.5);
+    color: var(--al1);}
+#header .navbar-status a{color: var(--al2);}
+#header .navbar-status a:hover{color: var(--al3);}
+#header .navbar-status .icon{
+    display: none;}
+#header .navbar-status .user_current_sc:before{
+    color:var(--bg3);
+    content: "\f520";
+    font-family: var(--awe)  !important;}
+#header .navbar-status .user_current_gc:before{
+    color:var(--al1);
+    content: "\f6be";
+    font-family: var(--awe)  !important;}
+
+#header .breadcrumb-nav{
+    background: rgba(25,15,26,0.8);
+    margin-bottom: 1rem;
+    border-radius: 0 0 10px 10px}
+#header .breadcrumb-nav a{
+    color: var(--al1);}
+#header .breadcrumb-nav a:hover{
+    color: var(--al3);}
+#header .breadcrumb-nav .breadcrumb-item.active{
+    color: var(--al2);}
+#bookmarkPage.fas.fa-bookmark.text-danger::before{
+    color: var(--al2);}
+
+.container{box-shadow: 0 0 15px black;
+    border-radius: 10px 10px 10px 10px;}
+#main{background: rgba(25, 15, 36,0.7);
+    border-radius: 0 10px 10px 0;}
+#main > h1{
+    font-size: 50px;
+    text-align: center;
+    background-image: linear-gradient(to bottom right, var(--re1), var(--al3));
+    color: transparent;
+    background-clip: text;
+    box-shadow: 0 5px 7px -7px var(--al1);}
+
+#main .nav-tabs{
+    border: 0;
+    justify-content: center;
+    font-size: 0;}
+#main .nav-tabs .nav-link{
+    background: none;
+border: 0;}
+#main .nav-tabs .nav-item:first-child a:before{
+    font-size: 20px !important;
+    font-family: var(--awe) !important;
+    content: "\f6e2";
+    color: white}
+#main .nav-tabs .nav-item:last-child a:before{
+    font-size: 20px !important;
+    font-family: var(--awe) !important;
+    content: "\f54c";
+    color: white;}
+#main .nav-tabs .nav-item:last-child a:hover:before, #main .nav-tabs .nav-item:first-child a:hover:before{
+    text-shadow: 0 0 10px var(--al3);
+    color: var(--al3);}
+
+#main table{
+    text-align: center;
+    color: var(--al1);}
+#main table a{color: var(--al2);}
+#main table img{
+    border-radius: 50% !important;}
+#main .table .card.mb-3{background: none;}
+#main .table .card.mb-3 .card-body{display:none;}
+#main .table .card.mb-3 a:before {
+    position: absolute;
+	z-index: 1 !important;
+    display: inline-block;
+	content: '';
+	background-image: url('https://raw.githubusercontent.com/Athiropi/Wolvden/main/FreeCSS/HalloweenDefault/treeframe.jpg');
+	background-size: 100% auto;
+    background-repeat: no-repeat;
+    mix-blend-mode: multiply;
+	width: 295px;
+	height: 400px;
+	top: -22%;
+	left: -35%;}
+#main .featured-wolf a:first-of-type:before {
+	z-index: 1 !important;
+    position: absolute;
+	content: '';
+    display: inline-block;
+	background-image: url('https://raw.githubusercontent.com/Athiropi/Wolvden/main/FreeCSS/HalloweenDefault/batframe.jpeg');
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+    mix-blend-mode: multiply;
+    top: -2%;
+	left: 9%;
+	width: 170px;
+	height: 200px;}
+#main table th{background: rgba(25,15,36,0.2);}
+#main table th a{
+    background-image: linear-gradient(to bottom right, var(--al1), var(--al3));
+    color: transparent;
+    background-clip: text;}
+#main table tr{
+    background: rgba(25,15,36,0.2);
+    box-shadow: 0 0 3px var(--bg3), 0 0 3px var(--al1);}
+#main .btn, #sidebar .btn, #main .card-body{
+    background: var(--bg2);
+    color: var(--mi2);
+    border: 0;}
+#main table td.bottom{
+    background: rgba(15,25,36,0.2)}
+
+#denCards > div img, #denCards .card{border-radius: 10px;
+    border: 1px solid black;}
+#denCards .card-img-top{
+    filter: grayscale(60%);
+}
+#denCards .card-img-top:hover{
+    filter: invert(100%);
+    transition: ease-out filter 0.3s}
+
+
+#main .btn:hover, #sidebar .btn:hover{
+    background: var(--al1);
+    color: var(--al3);}
+#main form  table .card-body{
+    background: rgba(15,25,36,0.5) !important;
+    color: var(--al1)}
+#main form  table .card-body a .text-light{
+    background: rgba(15,25,36,0.3) !important;}
+#main form table .card-body a small{
+    color: var(--al3)}
+#main form  table .card-body a .rounded-bottom{
+    border: 3px double var(--bg3);}
+#main form  table .card-body a .rounded-bottom.pl-3{
+    border: 0;}
+#main .badge-info{
+    background: var(--bg3);
+    color: white;}
+.fa-venus:before{
+    color: #a06771;}
+.fa-mars:before{
+    color: #396299;}
+.bg-warning{
+    background: var(--al3) !important;}
+.bg-primary{
+    background: var(--al2) !important;}
+.bg-danger{
+    background: var(--al1) !important;}
+.bg-info{
+    background: var(--al0) !important;}
+.bg-success{
+    background: var(--al3) !important;}
+
+#main .mt-2 a{color: var(--al2);}
+#main .mt-2 a:hover{color: var(--al3);}
+#main .card.mb-3, #main .col-md-6 .card{
+    background: rgba(15,25,36,0.5)}
+
+#sidebar{
+    background: rgba(15,25,36,0.75);
+    color: var(--bg3);}
+#sidebar .card{
+    background: rgba(15,25,36,0.4);
+    border: 0}
+#sidebar a{color: var(--al2);}
+#sidebar a:hover{color: var(--al3);}
+
+
+#footer{
+    background: rgba(15,25,36,0.9);
+    border-top: 1px solid var(--mi0);
+    border-left: 1px solid var(--mi0);
+    border-right: 1px solid var(--mi0);
+    margin-top: 1rem;
+    border-radius: 10px 10px 0 0;
+    color: var(--al1);}
+#footer a{
+    color: var(--al2);}
+#footer a:hover{
+    color: var(--al3);}
+
+/*Profile*/
+.user-tag{
+    border:5px double var(--al3);
+    box-shadow: 0 0 10px var(--al3);}
+#main .float-left.mr-2, #main ,.group-banner img{
+    border: 1px solid var(--al1);
+}
+
+@media(max-width:1200px){
+    #main .table .card.mb-3 a:before{
+        width: 330px;
+	    height: 400px;
+        top:-25%;
+        left:-35%;}
+    #main .featured-wolf a:first-of-type:before{
+        top: -2%;
+	    left: 18.5%;}}
+@media(max-width:768px){
+    #main .featured-wolf a:first-of-type:before{
+        left:11%;}}
+@media(max-width: 575px){
+    #main .featured-wolf a:first-of-type:before{
+        left:34.5%;}}
+@media(max-width: 495px){
+    #main .featured-wolf a:first-of-type:before{
+        left:31.5%;}}
