@@ -9,6 +9,7 @@
     --bg3: #bbb;
     --bg4: #999;
     --bg5: #777;
+    --bg6: #555;
     --hi1: #e4fbff;
     --hi2: #b4dfe5;
     --hi3: #9ccacf;
@@ -82,6 +83,10 @@ body{
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     font-size: 50px;}
+
+#fraDenHTML, #fraProfileHTML{
+    color: var(--bg6);
+}
 
 /*Nav Links*/
 #main .nav-tabs{
