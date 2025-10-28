@@ -222,6 +222,12 @@ border: 0;}
     border: 0}
 #sidebar a{color: var(--al2);}
 #sidebar a:hover{color: var(--al3);}
+.breadcrumb.col-lg-9.ml-auto.text-break::after {
+	content: "CSS by #185626";
+	color: var(--bg2);
+	font-size: 14px;
+	position: absolute;
+	right: 2rem;}
 
 
 #footer{
