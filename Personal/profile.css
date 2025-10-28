@@ -13,11 +13,6 @@
 
 @import url("https://fonts.googleapis.com/css2?family=GFS+Didot&family=Special+Elite&display=swap");
 
-@font-face {
-	font-family: 'Angel Wish';
-	src: url('https://veratuesday.github.io/VeraTuesday/Angelwish.ttf') format('truetype');
-}
-
 @font-face{
     font-family: "Oradano Micho";
     src: url("https://raw.githubusercontent.com/Athiropi/Wolvden/main/Personal/Font/OradanoGSRR.ttf") format("truetype");
