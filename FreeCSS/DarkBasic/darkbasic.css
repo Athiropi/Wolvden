@@ -181,7 +181,7 @@ color: var(--hi3)}
     filter: grayscale(0%);}
 .breadcrumb.col-lg-9.ml-auto.text-break::after {
 	content: "CSS by #185626";
-	color: var(--hi1);
+	color: var(--hi5);
 	font-size: 14px;
 	position: absolute;
 	right: 2rem;}
