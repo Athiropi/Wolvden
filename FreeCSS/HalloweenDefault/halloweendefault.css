@@ -249,7 +249,7 @@ border: 0;}
 .user-tag{
     border:5px double var(--al3);
     box-shadow: 0 0 10px var(--al3);}
-#main .float-left.mr-2, #main ,.group-banner img{
+#main .float-left.mr-2, #main .group-banner img{
     border: 1px solid var(--al1);
 }
 
