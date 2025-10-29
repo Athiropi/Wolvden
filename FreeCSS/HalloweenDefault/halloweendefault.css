@@ -139,7 +139,7 @@ border: 0;}
 	height: 400px;
 	top: -22%;
 	left: -35%;
-	pointer-event:none;}
+	pointer-events:none;}
 #main .featured-wolf a:first-of-type:before {
 	z-index: 1 !important;
     position: absolute;
@@ -153,7 +153,7 @@ border: 0;}
 	left: 9%;
 	width: 170px;
 	height: 200px;
-	pointer-event: none;}
+	pointer-events: none;}
 #main table th{background: rgba(25,15,36,0.2);}
 #main table th a{
     background-image: linear-gradient(to bottom right, var(--al1), var(--al3));
