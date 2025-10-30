@@ -14,7 +14,8 @@
     --inf: #3990be;}
 
 body{
-    background: url("https://raw.githubusercontent.com/Athiropi/Wolvden/main/FreeCSS/DarkBasic/DarkForestBackground.jpeg");
+	/*Credits: Rosie Sun on Unsplash	Original: https://unsplash.com/photos/photography-of-forest-1L71sPT5XKc*/
+    background: url("https://raw.githubusercontent.com/Athiropi/Wolvden/main/FreeCSS/DarkBasic/background-rsun.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
