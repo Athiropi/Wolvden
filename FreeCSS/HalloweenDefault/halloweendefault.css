@@ -288,6 +288,9 @@ border: 0;}
 .s-chat__username{
 	color: var(--bg1);
 }
+#chatMessageContainer a:hover{
+	color: var(--re1);
+}
 
 #txtChatContainer > div:nth-child(1) > span a{
 	color: var(--al1)
