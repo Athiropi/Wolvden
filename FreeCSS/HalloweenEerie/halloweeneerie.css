@@ -40,7 +40,6 @@ a:hover{
     color: var(--ma3)}
 
 /*Top of header*/
-.navbar-brand{filter: invert(100%);}
 #header .navbar-main{
     background: rgba(0,0,0,0.6);
     border-left: 2px double var(--bg3);
