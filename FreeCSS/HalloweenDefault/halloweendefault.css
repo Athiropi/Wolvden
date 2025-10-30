@@ -75,6 +75,10 @@ a, a:hover{
     color:var(--al1);
     content: "\f6be";
     font-family: var(--awe)  !important;}
+#header .dropdown-menu{
+    background: var(--bg2);}
+#header .dropdown-menu .dropdown-item{
+    background: var(--bg2);}
 
 #header .breadcrumb-nav{
     background: rgba(25,15,26,0.8);
