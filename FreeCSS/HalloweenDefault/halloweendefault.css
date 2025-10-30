@@ -166,7 +166,7 @@ border: 0;}
 #main table tr{
     background: rgba(25,15,36,0.2);
     box-shadow: 0 0 3px var(--bg3), 0 0 3px var(--al1);}
-#main .btn, #sidebar .btn, #main .card-body{
+#main .btn, #sidebar .btn, #main .card-body, #btnChatSend{
     background: var(--bg2);
     color: var(--mi2);
     border: 0;}
@@ -254,24 +254,25 @@ border: 0;}
     border:5px double var(--al3);
     box-shadow: 0 0 10px var(--al3);}
 #main .float-left.mr-2, #main .group-banner img{
-    border: 1px solid var(--al1);
-}
+    border: 1px solid var(--al1);}
+#main table tr td{
+    background: rgba(0,0,0,0.1);}
 
 .s-chat-message:nth-child(even) /* Even Numbered Messages */ {
-	background: rgba(59, 50, 121, 0.5) !important;
-        color: #000000 !important;
+	background: var(--mi0) !important;
+        color: var(--al2) !important;
 	border: none !important;
 }
 
 .s-chat-message:nth-child(odd) /* Odd Numbered Messages */ {
-	background: rgba(59, 50, 121, 0.5) !important;
-        color: #000000 !important;
+	background: var(--al0) !important;
+        color: var(--mi2) !important;
 	border: none !important;
 }
 
 .s-chat-message__pinned /* Pinned Message */ {
-	background: rgba(59, 50, 121, 0.5) !important;
-        color: #000000 !important;
+	background: var(--bg2) !important;
+        color: var(--hi1) !important;
 	border: none !important;
 }
 
@@ -280,9 +281,15 @@ border: 0;}
 	text-shadow: 0 0 10px #ffe661 !important;
 }
 
-div#chatMessageContainer {
-	background: linear-gradient(red, orange, yellow, lime, blue, purple) !important;
-	border: none !important;
+.s-chat__username{
+	color: var(--bg1);
+}
+
+#txtChatContainer > div:nth-child(1) > span{
+	color: var(--al1)
+}
+#txtChatContainer > div:nth-child(1) > span:hover{
+	color: var(--al2)
 }
 
 button#label_currentChannel /* Channel Button ie. Main, Sales */ {
