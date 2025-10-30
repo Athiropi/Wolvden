@@ -1,6 +1,266 @@
 @font-face{
     font-family: "Branda";
-    src: url("https://raw.githubusercontent.com/Athiropi/Wolvden/main/FreeCSS/Fonts/branda-yolq.ttf") format("truetype");}
+    src: url("https://raw.githubusercontent.com/Athiropi/Wolvden/main/Fonts/Branda-yolq.ttf") format("truetype");}
+
+:root{
+    --bg1: rgb(0, 0, 0);
+    --bg2: rgb(34, 34, 34);
+    --bg3: rgb(68, 68, 68);
+    --bg4: rgb(102, 102, 102);
+    
+    --hi1: #fff;
+    --hi2: rgb(221, 221, 221);
+    --hi3: rgb(187, 187, 187);
+    --hi4: rgb(153, 153, 153);
+    
+    --ma1: rgb(241, 61, 61);
+    --ma2: rgb(193, 42, 42);
+    --ma3: rgb(130, 12, 12);
+    --ma4: rgb(86, 2, 2);
+    --ma5: rgb(56, 1, 1);
+
+    --bo1: 4px double var(--bg4);
+    --awe: 'Font Awesome 5 Free' !important;}
 
 body{
-    font-family: "Branda";}
+    background: url("https://raw.githubusercontent.com/Athiropi/Wolvden/main/FreeCSS/HalloweenEerie/background.jpeg") no-repeat;
+    filter: invert(5%);
+    font-family: "Branda";
+    background-size: cover;
+    background-attachment: fixed;}
+
+a{color: var(--ma3);} 
+a:hover{
+    color: var(--ma2);
+    text-decoration: none;}
+
+.alert{
+    background: rgba(255,255,255,0.5);
+    border: 3px double var(--bg3);
+    color: var(--ma3)}
+
+/*Top of header*/
+.navbar-brand{filter: invert(100%);}
+#header .navbar-main{
+    background: rgba(0,0,0,0.6);
+    border-left: 2px double var(--bg3);
+    border-right: 2px double var(--bg3);}
+#header .navbar-main .nav-link .fa{
+    color: var(--bg1);}
+#header .navbar-main .nav-link:hover, #header .navbar-main .nav-link:hover .fa{color: var(--ma3);
+}
+
+/*Middle of header*/
+#header .navbar-status{
+    background: rgba(255,255,255,0.3);
+    color: var(--ma3);
+    border-left: 2px double var(--bg4);
+    border-right: 2px double var(--bg4);
+    border-top: 3px double var(--ma4);
+    border-bottom: 3px double var(--ma4);}
+#header .navbar-status a{
+    color: var(--ma3);}
+#header .navbar-status a:hover{
+    color: var(--ma2);
+    text-shadow: 0 0 2px var(--ma3);}
+#header .navbar-status .icon{
+    display: none;}
+#header .navbar-status .user_current_sc:before{
+    color:var(--hi2);
+    content: "\f520";
+    font-family: var(--awe)  !important;}
+#header .navbar-status .user_current_gc:before{
+    color:var(--bg2);
+    content: "\f520";
+    font-family: var(--awe)  !important;}
+
+/*Bottom of header*/
+#header .breadcrumb-nav{
+    background: rgba(0,0,0,0.3);
+    border-left: 2px double var(--bg4);
+    border-right: 2px double var(--bg4);
+    border-bottom: 3px double var(--hi4);
+ 
+    margin-bottom: 1rem;}
+#header .breadcrumb-nav .breadcrumb-item.active{
+    color: var(--hi1);}
+#bookmarkPage.fas.fa-bookmark.text-danger::before{
+    color: var(--ma4);}
+
+/*Main*/
+#main{
+    background: rgba(0,0,0,0.5);
+    border: 3px double var(--bg4);}
+#main > h1{
+    text-align: center;
+    font-size: 50px;
+    color: var(--ma3);
+    text-shadow: 0 10px var(--ma5);
+    transition: text-shadow 0.2s}
+#main > h1:hover{
+    text-shadow: 0 0 5px red;
+    transition: text-shadow 0.3s}
+
+#main .nav-tabs{
+    border: 0;
+    justify-content: space-evenly;
+    font-size: 0;}
+#main .nav-tabs .nav-link{
+    background: none;
+border: 0;}
+#main .nav-tabs .nav-item:first-child a:before{
+    font-size: 20px !important;
+    font-family: var(--awe) !important;
+    content: "\f1b0";
+    color: var(--ma4);}
+#main .nav-tabs .nav-item:last-child a:before{
+    font-size: 20px !important;
+    font-family: var(--awe) !important;
+    content: "\f717";
+    color: var(--ma4);}
+#main .nav-tabs .nav-item:last-child a:hover:before, #main .nav-tabs .nav-item:first-child a:hover:before{
+    text-shadow: 0 0 10px var(--ma5);
+    color: var(--ma3);}
+
+/*Leader + Featured Wolf*/
+#main table{
+    border: 3px double var(--bg3);
+    text-align: center;
+    background: none;}
+#main table i{
+    color: var(--hi1);}
+#main table th{background: none;}
+#main table th a{
+    color: var(--ma4);
+    font-size: 30px;
+    text-shadow: 0 0 5px var(--bg1)}
+#main table tr{ background: rgba(255,255,255,0.1);}
+#main table .card.mb-3{
+    transition: filter 5s;
+    border: var(--bo1);
+    filter: opacity(50%) grayscale(60%);}
+#main table .card.mb-3:hover{
+    transition: filter 1s;
+    filter: opacity(100%) grayscale(0%);}
+#main table .card.mb-3 .card-body{display:none;}
+#main .featured-wolf img{
+    border: var(--bo1);
+    filter: opacity(50%) grayscale(60%);
+    transition: filter 5s;}
+#main .featured-wolf img:hover{
+    border: var(--bo1);
+    filter: opacity(100%) grayscale(0%);
+    transition: filter 1s;}
+
+/*Den Cards*/
+#denCards img{filter: grayscale(100%);
+    transition: filter 5s;
+    border: 3px double var(--bg2)}
+#denCards img:hover{filter: 
+    grayscale(100%) invert(100%);
+    transition: filter 1s;}
+
+#main form table .card-body{
+    transition: filter 3s, color 3s;
+    border: var(--bo1);
+    filter: opacity(60%) grayscale(60%);
+    background:rgba(34,34,34,0.5) !important;
+color: var(--hi4)}
+#main form table .card-body a .text-light{
+    background: none !important;
+}
+#main form table .card-body:hover{
+    transition: filter 1s, color 1s;
+    border: var(--bo1);
+    filter: opacity(100%) grayscale(0%);
+    background:rgba(34,34,34,0.5) !important;
+color: var(--ma2)}
+#main .btn, #sidebar .btn{
+    background: var(--ma5);
+    color: var(--hi3);
+    border: 0;}
+#main .btn:hover{
+    background: var(--hi3);
+    color: var(--ma2)}
+#main form table td{
+    background: none;}
+
+#main .progress{
+    border: 1px solid var(--bg1)
+}
+#main form table .card-body:hover .bg-success, #main form table .card-body:hover .bg-warning,#main form table .card-body:hover .bg-danger, #main form table .card-body:hover .bg-info, #main form table .card-body:hover .bg-primary{
+    transition: filter 1s, color 1s;
+    filter: grayscale(0%);
+}
+.bg-success{
+    transition: filter 3s, color 3s;
+    filter: grayscale(100%);
+    background: var(--ma2) !important;}
+.bg-warning{
+    transition: filter 3s, color 3s;
+    filter: grayscale(100%);
+    background: var(--ma2) !important;}
+.bg-primary{
+    transition: filter 3s, color 3s;
+    filter: grayscale(100%);
+    background: var(--ma3) !important;}
+.bg-danger{
+    transition: filter 3s, color 3s;
+    filter: grayscale(100%);
+    background: var(--ma4) !important;}
+.bg-info{
+    transition: filter 3s, color 3s;
+    filter: grayscale(100%);
+    background: var(--ma5) !important;}
+#main .card .card-header{
+    background: var(--bg2) !important;}
+#main .card .card-body{
+    background: var(--bg3);}
+.breadcrumb.col-lg-9.ml-auto.text-break::after {
+	content: "CSS by #185626";
+	color: var(--ma4);
+	font-size: 14px;
+	position: absolute;
+	right: 2rem;}
+
+#sidebar{
+    background: rgba(0,0,0,0.6);
+    color: white;
+    border: 3px double var(--bg4);}
+#sidebar .card{
+    background: rgba(255,255,255,0.2);
+    border: 3px double var(--hi4);}
+#sidebar .progress{
+    border: 1px solid white;}
+#card-user .w-50:first-child img{
+    border: 3px double white;}
+#card-user .w-50 img{filter: grayscale(60%);}
+
+#footer{
+    margin-top: 1rem;
+    background: rgba(0,0,0,0.5);
+    border-top: 3px double var(--bg4);
+    border-left: 3px double var(--bg4);
+    border-right: 3px double var(--bg4);}
+#footer a{
+    color: var(--ma3) !important;}
+#footer a:hover{
+    color: var(--ma2) !important;}
+
+/*Profile*/
+#main table tr td{
+    background: rgba(0,0,0,0.1);}
+#main table .floatright a{
+    font-size: 20px ;}
+#main .mb-2 img, #main .group-banner, #main .user-tag{
+    transition: filter 1s;
+    filter: opacity(60%) grayscale(50%);
+    border: 3px double var(--hi4);}
+#main .mb-2 img:hover, #main .group-banner:hover, #main .user-tag:hover{
+    filter: opacity(100%) grayscale(0%);
+    border: 3px double var(--hi4);}
+
+/*Chat*/
+
+
+
