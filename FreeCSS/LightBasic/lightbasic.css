@@ -25,7 +25,8 @@ a:hover{
 
 body{
     font-family: "Poiret";
-    background: url("https://raw.githubusercontent.com/Athiropi/Wolvden/main/FreeCSS/LightBasic/LightBasicBackground.jpeg");
+	/*Credits: Josh Kirk on Unsplash	Original: https://unsplash.com/photos/lake-beside-mountain-under-cloudy-sky-T_3JkNB08tk*/
+    background: url("https://raw.githubusercontent.com/Athiropi/Wolvden/main/FreeCSS/LightBasic/background-jkirk.jpeg");
     background-size: cover;
     background-attachment: fixed;}
 
