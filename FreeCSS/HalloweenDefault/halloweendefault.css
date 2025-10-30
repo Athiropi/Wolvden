@@ -257,6 +257,40 @@ border: 0;}
     border: 1px solid var(--al1);
 }
 
+.s-chat-message:nth-child(even) /* Even Numbered Messages */ {
+	background: rgba(59, 50, 121, 0.5) !important;
+        color: #000000 !important;
+	border: none !important;
+}
+
+.s-chat-message:nth-child(odd) /* Odd Numbered Messages */ {
+	background: rgba(59, 50, 121, 0.5) !important;
+        color: #000000 !important;
+	border: none !important;
+}
+
+.s-chat-message__pinned /* Pinned Message */ {
+	background: rgba(59, 50, 121, 0.5) !important;
+        color: #000000 !important;
+	border: none !important;
+}
+
+.s-chat-message_timestamp /* Timestamps */ {
+	color: #000000 !important;
+	text-shadow: 0 0 10px #ffe661 !important;
+}
+
+div#chatMessageContainer {
+	background: linear-gradient(red, orange, yellow, lime, blue, purple) !important;
+	border: none !important;
+}
+
+button#label_currentChannel /* Channel Button ie. Main, Sales */ {
+	background: rgba(59, 50, 121, 0.5) !important;
+        color: #000000 !important;
+	border: none !important;
+}
+
 @media(max-width:1200px){
     #main .table .card.mb-3 a:before{
         width: 330px;
