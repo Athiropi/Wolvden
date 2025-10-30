@@ -266,7 +266,7 @@ border: 0;}
 
 .s-chat-message:nth-child(odd) /* Odd Numbered Messages */ {
 	background: var(--al0) !important;
-        color: var(--mi2) !important;
+        color: var(--bg3) !important;
 	border: none !important;
 }
 
@@ -285,10 +285,10 @@ border: 0;}
 	color: var(--bg1);
 }
 
-#txtChatContainer > div:nth-child(1) > span{
+#txtChatContainer > div:nth-child(1) > span a{
 	color: var(--al1)
 }
-#txtChatContainer > div:nth-child(1) > span:hover{
+#txtChatContainer > div:nth-child(1) > span a:hover{
 	color: var(--al2)
 }
 
