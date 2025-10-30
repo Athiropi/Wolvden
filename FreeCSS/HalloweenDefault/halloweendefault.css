@@ -249,9 +249,10 @@ border: 0;}
     border-radius: 10px 10px 0 0;
     color: var(--al1);}
 #footer a{
-    color: var(--al2);}
+    color: var(--al2) !important;}
 #footer a:hover{
-    color: var(--al3);}
+    color: var(--al3) !important;}
+
 
 /*Profile*/
 .user-tag{
