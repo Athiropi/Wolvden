@@ -184,13 +184,13 @@ color: var(--hi4)}
     filter: opacity(100%) grayscale(0%);
     background:rgba(34,34,34,0.5) !important;
 color: var(--ma2)}
-#main .btn, #sidebar .btn, #btnChatSend{
-    background: var(--ma5);
-    color: var(--hi3);
-    border: 0;}
-#main .btn:hover, #sidebar .btn:hover, #btnChatSend:hover{
-    background: var(--hi3);
-    color: var(--ma2)}
+#main .btn, #sidebar .btn, #btnChatSend, #chatMessageContainer > div.s-chat-error_screen > p:nth-child(3) > button{
+    background: var(--ma5) !important;
+    color: var(--hi3) !important;
+    border: 0; !important}
+#main .btn:hover, #sidebar .btn:hover, #btnChatSend:hover, #chatMessageContainer > div.s-chat-error_screen > p:nth-child(3) > button:hover{
+    background: var(--hi3) !important;
+    color: var(--ma2) !important;}
 #main form table td{
     background: none;}
 
@@ -314,6 +314,9 @@ button#label_currentChannel /* Channel Button ie. Main, Sales */ {
 	color: var(--ma4);}
 #txtChatContainer > div:nth-child(1) > span a:hover{
 	color: var(--ma3);}
+
+#chatMessageContainer > div.s-chat-error_screen{
+	background: rgba(0,0,0,0.5);}
 
 
 
