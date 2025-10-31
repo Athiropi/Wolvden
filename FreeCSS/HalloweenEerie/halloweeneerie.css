@@ -274,8 +274,9 @@ color: var(--ma2)}
 	background: rgba(0,0,0,0.5) !important;
 	color: white !important;}
 #fraChatChannelMenu{
-	background: rgba(0,0,0,0.5) !important;
-	color: white !important;}
+	background: rgba(0,0,0,0.8) !important;}
+#fraChatChannelMenu button{
+	color: white !important}
 #fraChatChannelMenu .channelSwitcher.active{
 	background: rgba(255,255,255,0.5) !important;
 	color: black !important;}
