@@ -170,7 +170,7 @@ border: 0;}
 #main table tr{
     background: rgba(25,15,36,0.2);
     box-shadow: 0 0 3px var(--bg3), 0 0 3px var(--al1);}
-#main .btn, #sidebar .btn, #main .card-body, #btnChatSend{
+#main .btn, #sidebar .btn, #main .card-body, #btnChatSend, #chatMessageContainer > div.s-chat-error_screen > p:nth-child(3) > button{
     background: var(--bg2);
     color: var(--mi2);
     border: 0;}
@@ -187,7 +187,7 @@ border: 0;}
     transition: ease-out filter 0.3s}
 
 
-#main .btn:hover, #sidebar .btn:hover{
+#main .btn:hover, #sidebar .btn:hover, #chatMessageContainer > div.s-chat-error_screen > p:nth-child(3) > button:hover{
     background: var(--al1);
     color: var(--al3);}
 #main form  table .card-body{
@@ -263,48 +263,43 @@ border: 0;}
 #main table tr td{
     background: rgba(0,0,0,0.1);}
 
-.s-chat-message:nth-child(even) /* Even Numbered Messages */ {
+
+/*Chat*/
+#fraChatChannelMenu{
+	background: rgba(25,15,36,0.8) !important;}
+#fraChatChannelMenu button{
+	color: var(--al1) !important}
+#fraChatChannelMenu .channelSwitcher.active{
+	background: rgba(25,15,36,0.5) !important;
+	color: black !important;}
+.s-chat-message:nth-child(even) {
 	background: var(--mi0) !important;
-        color: var(--al2) !important;
-	border: none !important;
-}
-
-.s-chat-message:nth-child(odd) /* Odd Numbered Messages */ {
+     color: var(--al2) !important;
+	border: none !important;}
+.s-chat-message:nth-child(odd) {
 	background: var(--al0) !important;
-        color: var(--bg3) !important;
-	border: none !important;
-}
-
-.s-chat-message__pinned /* Pinned Message */ {
+    color: var(--bg3) !important;
+	border: none !important;}
+.s-chat-message__pinned {
 	background: var(--bg2) !important;
         color: var(--hi1) !important;
-	border: none !important;
-}
-
-.s-chat-message_timestamp /* Timestamps */ {
-	color: #000000 !important;
-	text-shadow: 0 0 10px #ffe661 !important;
-}
-
+	border: none !important;}
+.s-chat-message_timestamp {
+	color: #000000 !important;}
 .s-chat__username{
-	color: var(--bg1);
-}
+	color: var(--bg1);}
 #chatMessageContainer a:hover{
-	color: var(--re1);
-}
-
+	color: var(--re1);}
 #txtChatContainer > div:nth-child(1) > span a{
-	color: var(--al1)
-}
+	color: var(--al1)}
 #txtChatContainer > div:nth-child(1) > span a:hover{
-	color: var(--al2)
-}
-
-button#label_currentChannel /* Channel Button ie. Main, Sales */ {
+	color: var(--al2)}
+button#label_currentChannel {
 	background: rgba(59, 50, 121, 0.5) !important;
-        color: #000000 !important;
-	border: none !important;
-}
+    color: #000000 !important;
+	border: none !important;}
+#chatMessageContainer > div.s-chat-error_screen{
+	background: rgba(25,15,36,0.5) !important;}
 
 @media(max-width:1200px){
     #main .table .card.mb-3 a:before{
