@@ -271,7 +271,7 @@ border: 0;}
 	color: var(--al1) !important}
 #fraChatChannelMenu .channelSwitcher.active{
 	background: rgba(25,15,36,0.5) !important;
-	color: black !important;}
+	color: white !important;}
 .s-chat-message:nth-child(even) {
 	background: var(--mi0) !important;
      color: var(--al2) !important;
