@@ -271,8 +271,8 @@ color: var(--ma2)}
 
 /*Chat*/
 #label_currentChannel{
-	background: rgba(0,0,0,0.5);
-	color: white;}
+	background: rgba(0,0,0,0.5) !important;
+	color: white !important;}
 #fraChatChannelMenu{
 	background: rgba(0,0,0,0.5) !important;
 	color: white !important;}
@@ -296,14 +296,14 @@ color: var(--ma2)}
 	text-shadow: 0 0 10px #ffe661 !important;}
 
 .s-chat__username{
-	color: var(--ma5);}
+	color: var(--ma5) !important;}
 #chatMessageContainer a:hover{
-	color: var(--ma4);}
+	color: var(--ma4) !important;}
 
 #txtChatContainer > div:nth-child(1) > span a{
-	color: var(--ma5)}
+	color: var(--ma5) !important;}
 #txtChatContainer > div:nth-child(1) > span a:hover{
-	color: var(--ma4)}
+	color: var(--ma4) !important;}
 
 button#label_currentChannel /* Channel Button ie. Main, Sales */ {
 	background: rgba(59, 50, 121, 0.5) !important;
@@ -311,12 +311,12 @@ button#label_currentChannel /* Channel Button ie. Main, Sales */ {
 	border: none !important;}
 
 #txtChatContainer > div:nth-child(1) > span a{
-	color: var(--ma4);}
+	color: var(--ma4) !important;}
 #txtChatContainer > div:nth-child(1) > span a:hover{
-	color: var(--ma3);}
+	color: var(--ma3) !important;}
 
 #chatMessageContainer > div.s-chat-error_screen{
-	background: rgba(0,0,0,0.5);}
+	background: rgba(0,0,0,0.5) !important;}
 
 
 
