@@ -76,7 +76,7 @@ a:hover{
     content: "\f520";
     font-family: var(--awe)  !important;}
 #header .navbar-status .btn{
-	color: var(--ma5) !important;
+	color: var(--ma5) !important;}
 #header .dropdown-menu{
     background: var(--hi2);}
 #header .dropdown-menu .dropdown-item{
