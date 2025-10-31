@@ -80,7 +80,7 @@ a:hover{
 #header .dropdown-menu{
     background: var(--hi2);}
 #header .dropdown-menu .dropdown-item{
-    background: var(--bg2);
+    background: var(--hi2);
 	color: var(--ma5) !important;}
 
 /*Bottom of header*/
@@ -274,11 +274,11 @@ color: var(--ma2)}
 	background: rgba(0,0,0,0.5);
 	color: white;}
 #fraChatChannelMenu{
-	background: rgba(0,0,0,0.5);
-	color: white;}
+	background: rgba(0,0,0,0.5) !important;
+	color: white !important;}
 #fraChatChannelMenu .channelSwitcher.active{
-	background: rgba(255,255,255,0.5);
-	color: black;}
+	background: rgba(255,255,255,0.5) !important;
+	color: black !important;}
 .s-chat-message:nth-child(even) /* Even Numbered Messages */ {
 	background: var(--hi3) !important;
     color: var(--bg2) !important;
