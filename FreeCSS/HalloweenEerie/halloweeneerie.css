@@ -68,11 +68,11 @@ a:hover{
 #header .navbar-status .icon{
     display: none;}
 #header .navbar-status .user_current_sc:before{
-    color:var(--hi2);
+    color:var(--bg2);
     content: "\f520";
     font-family: var(--awe)  !important;}
 #header .navbar-status .user_current_gc:before{
-    color:var(--bg2);
+    color:var(--ma4);
     content: "\f520";
     font-family: var(--awe)  !important;}
 #header .navbar-status .btn{
