@@ -221,7 +221,7 @@ border: 0;}
 
 #main .mt-2 a{color: var(--al2);}
 #main .mt-2 a:hover{color: var(--al3);}
-#main .card.mb-3, #main .col-md-6 .card{
+#main .card.mb-3, #main .col-md-6 .card, #main .mt-3 .card-body{
     background: rgba(15,25,36,0.5)}
 
 #sidebar{
