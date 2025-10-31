@@ -75,6 +75,13 @@ a:hover{
     color:var(--bg2);
     content: "\f520";
     font-family: var(--awe)  !important;}
+#header .navbar-status .btn{
+	color: var(--ma5) !important;
+#header .dropdown-menu{
+    background: var(--hi2);}
+#header .dropdown-menu .dropdown-item{
+    background: var(--bg2);
+	color: var(--ma5) !important;}
 
 /*Bottom of header*/
 #header .breadcrumb-nav{
@@ -177,11 +184,11 @@ color: var(--hi4)}
     filter: opacity(100%) grayscale(0%);
     background:rgba(34,34,34,0.5) !important;
 color: var(--ma2)}
-#main .btn, #sidebar .btn{
+#main .btn, #sidebar .btn, #txtChatContainer > div:nth-child(1) > span a{
     background: var(--ma5);
     color: var(--hi3);
     border: 0;}
-#main .btn:hover{
+#main .btn:hover, #sidebar .btn:hover, #txtChatContainer > div:nth-child(1) > span a:hover{
     background: var(--hi3);
     color: var(--ma2)}
 #main form table td{
@@ -263,42 +270,40 @@ color: var(--ma2)}
     border: 3px double var(--hi4);}
 
 /*Chat*/
+#label_currentChannel{
+	background: rgba(0,0,0,0.5);
+	color: white;}
+#fraChatChannelMenu{
+	background: rgba(0,0,0,0.5);
+	color: white;}
+#fraChatChannelMenu .channelSwitcher.active{
+	background: rgba(255,255,255,0.5);
+	color: black;}
 .s-chat-message:nth-child(even) /* Even Numbered Messages */ {
 	background: var(--hi3) !important;
-        color: var(--bg2) !important;
-	border: none !important;
-}
-
+    color: var(--bg2) !important;
+	border: none !important;}
 .s-chat-message:nth-child(odd) /* Odd Numbered Messages */ {
 	background: var(--hi2) !important;
-        color: var(--bg2) !important;
-	border: none !important;
-}
-
+    color: var(--bg2) !important;
+	border: none !important;}
 .s-chat-message__pinned /* Pinned Message */ {
 	background: var(--hi4) !important;
-        color: var(--ma3) !important;
-	border: none !important;
-}
-
+    color: var(--ma3) !important;
+	border: none !important;}
 .s-chat-message_timestamp /* Timestamps */ {
 	color: var(--ma5) !important;
-	text-shadow: 0 0 10px #ffe661 !important;
-}
+	text-shadow: 0 0 10px #ffe661 !important;}
 
 .s-chat__username{
-	color: var(--ma5);
-}
+	color: var(--ma5);}
 #chatMessageContainer a:hover{
-	color: var(--ma4);
-}
+	color: var(--ma4);}
 
 #txtChatContainer > div:nth-child(1) > span a{
-	color: var(--ma5)
-}
+	color: var(--ma5)}
 #txtChatContainer > div:nth-child(1) > span a:hover{
-	color: var(--ma4)
-}
+	color: var(--ma4)}
 
 button#label_currentChannel /* Channel Button ie. Main, Sales */ {
 	background: rgba(59, 50, 121, 0.5) !important;
