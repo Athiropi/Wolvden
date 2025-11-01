@@ -210,12 +210,12 @@ border: 0;}
     background: none;}
 #main table th{
     background: none;}
+#main table th:hover a{
+    text-shadow: 0 0 5px red;}
 #main table th a{
     color: var(--ma4) !important;
     font-size: 30px;
     text-shadow: 0 0 5px var(--bg1);}
-#main table th:hover a{
-    text-shadow: 0 0 5px red;}
 #main table i{
     color: var(--hi1);}
 #main table tr{
@@ -242,20 +242,20 @@ border: 0;}
     border: var(--bo1);
     filter: opacity(60%) grayscale(60%);
     background:rgba(34,34,34,0.5) !important;
-color: var(--hi4);}
+    color: var(--hi4);}
 #main form table .card-body:hover{
     transition: filter 1s, color 1s;
     border: var(--bo1);
     filter: opacity(100%) grayscale(0%);
     background:rgba(34,34,34,0.5) !important;
-color: var(--ma2)}
+    color: var(--ma2)}
+#main .badge-info{
+    background: var(--bg2);
+    color: var(--hi3) !important;}
 #main table .card-body a > img{
     border: 3px double var(--bg4);}
 #main table .card-body .text-light{
     background: none !important;
-    color: var(--ma3) !important;}
-#main .badge-info{
-    background: var(--bg2);
     color: var(--hi3) !important;}
 #main table .btn, #sidebar .btn, #btnChatSend, #chatMessageContainer > div.s-chat-error_screen > p:nth-child(3) > button{
     background: var(--ma5) !important;
