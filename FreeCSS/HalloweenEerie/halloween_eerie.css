@@ -423,8 +423,6 @@ color: var(--ma2)}
     background: rgba(0,0,0,0.1) !important;}
 #main table .floatright a{
     font-size: 20px ;}
-#main .form-row .card-body{
-    background: var(--ma4) !important;}
 #main .text-success{
     color: var(--ma2) !important;}
 #main .mb-2 img, #main .group-banner, #main .user-tag{
