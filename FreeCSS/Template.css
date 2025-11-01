@@ -230,6 +230,12 @@ header .navbar-status a:hover{
 #main table .bottom{
     background: ;}
 
+/*Den Cards*/
+#denCards .card{
+	border: ;}
+#denCards .card:hover{
+	opacity: 0.8;}
+
 /*Create a New Cave*/
 /*
 #main .card.mb-3 = Entire
