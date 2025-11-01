@@ -27,6 +27,8 @@ Format - .tff = truetype, .otf = opentype, .woff = woff
 Lines starting with -- are variables (eg. --bg1)
 This means you can just put the variable name (eg. bg1) 
 instead of the value (eg rgb(25,15,36).
+You can call a variable with the format: var(variablename) E.g. color: var(--bg1);
+
 Font Awesome allows you to use symbols. Find symbols here: fontawesome.com/search
 See bottom of CSS sheet to see an example of how to use them.
 */
@@ -115,7 +117,7 @@ header .navbar-status a:hover{
     background: none;
     color:  !important;}
 #header .dropdown-item{
-    background: ;
+    background: none;
     color:  !important}
 
 /*Bottom part of header*/
