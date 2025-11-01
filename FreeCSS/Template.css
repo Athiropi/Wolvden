@@ -1,0 +1,408 @@
+/*Template*/
+/*Template by #185626*/
+/*Stuff to note:
+-Color refers to the text colour
+-Background/background-image controls the background image/colour
+-Chat section is a bit harder to test because you can't see the changes in Stylus (or at least I can't!). It should work when you have uploaded your CSS sheet to your den/profile.
+
+Interested in more complex designs? Check out these sites for more in-depth explanations about CSS techniques:
+https://developer.mozilla.org/en-US/docs/Web/CSS
+https://www.w3schools.com/css/css3_fonts.asp
+*/
+
+
+
+/*Import a font style*/
+/*
+Font family - how it will be called
+Src - Link to file
+Format - .tff = truetype, .otf = opentype, .woff = woff
+*/
+@font-face{
+    font-family: "";
+    src: url("") format("");}
+
+/*Global settings*/
+/*
+Lines starting with -- are variables (eg. --bg1)
+This means you can just put the variable name (eg. bg1) 
+instead of the value (eg rgb(25,15,36).
+Font Awesome allows you to use symbols. Find symbols here: fontawesome.com/search
+See bottom of CSS sheet to see an example of how to use them.
+*/
+:root{
+    --bg1: rgb(25, 15, 36);
+    
+    --awe: 'Font Awesome 5 Free' !important;
+}
+
+/*Whole page*/
+/*
+Add page background here (+ Credits)
+Background already set to fit webpage and remain still
+*/
+body{
+    font-family: "";
+    /*Credits:      Original: */
+    /*background: url("");*/
+    background-size: cover;
+    background-attachment: fixed;
+    color: aqua}
+
+/*Sets some of the text (welcome back, sc/gc/messages/modbox, sidebar stats, nursing, Year)*/
+span{
+    color: lime !important;}
+
+/*Links*/
+/*Sets link details*/
+a{color: red !important;}
+/*Sets link appearance upon hover*/
+a:hover{
+    color: pink !important;
+    text-decoration: none;}
+
+/*Buttons - unless overrwritten elsewhere*/
+.btn{
+    background: purple;
+    color: orange;
+    border: 0;}
+.btn:hover{
+    background: pink;
+    color: cyan;}
+
+/*Typing + Dropdown area (Caves + Den Options)*/
+.form-control{
+    background: turquoise !important;
+    color: red !important;}
+
+
+
+/*Header*/
+
+/*Top part of header*/
+/*
+#header .navbar-main = Entire
+#main-menu .navbar-nav = Only link area (excluding Logo)
+#header .navbar-main .nav-item(:hover) .fa = controls icons
+*/
+#header .navbar-main{background: rgba(25,15,26, 0.9);}
+#main-menu .navbar-nav{
+    flex: 0 0 100%;
+    justify-content: space-between;}
+#header .navbar-main .nav-item .fa{color: black}
+#header .navbar-main .nav-item:hover .fa{color: white}
+/*Keep if overriding overall color value*/
+#header .navbar-main .nav-link{color: orange !important;}
+#header .navbar-main .nav-link:hover{color: green!important;}
+/**/
+
+/*Middle part of header*/
+/*
+#header .navbar-status = entire
+.dropdown-menu = dropdown when clicking username
+.dropdown-item = each individual link area in dropdown
+*/
+#header .navbar-status{
+    background: rgba(74,18,0,0.5);
+    color: var(--al1);}
+.dropdown-menu{
+    background: var(--bg2);}
+#header .btn{
+    background: none;
+    color: gold !important;}
+#header .dropdown-item{
+    background: var(--bg2);
+    color: salmon !important}
+
+/*Bottom part of header*/
+/*
+#header .breadcrumb-nav = Entire
+.breadcrumb-item.active = your pack name
+*/
+#header .breadcrumb-nav{
+    background: rgba(25,15,26,0.8);
+    margin-bottom: 1rem;
+    border-radius: 0 0 10px 10px}
+.breadcrumb-item.active{
+    color: white;}
+.fa-bookmark.text-danger::before{
+    color: black;}
+
+
+
+/*Both main and sidebar*/
+
+.container:nth-of-type(4){box-shadow: 0 0 15px black;}
+/*Progress bars*/
+/*
+.bg-success = Nursing pup survival
+.bg-warning = energy
+.bg-primary = mood
+.bg-danger = hunger
+.bg-info = hp
+*/
+.progress{
+    background: red !important;
+    border: 1px solid white;}
+.bg-success{
+    background: blue !important;}
+.bg-warning{
+    background: lime !important;}
+.bg-primary{
+    background: yellow !important;}
+.bg-danger{
+    background: crimson;}
+.bg-info{
+    background: cyan !important;}
+
+
+
+/*Main*/
+/*Big main box on the right*/
+
+#main{
+    background: pink;
+    color: white;}
+
+/*Your pack name at top of main*/
+#main > h1{
+    text-align: center;
+}
+
+/*Alerts (eg not 100% survival chance, hunters finished, etc)*/
+.alert{
+    border: 1px solid white;
+    box-shadow: 0 0 5px yellow;
+    background: blue;
+    color: black;}
+
+/*Entire row with navigation to your den & profile in main*/
+.nav-tabs{
+    background: cyan;
+    border: 0 !important;}
+/*Den nav*/
+.nav-tabs .nav-link.active{
+    background: red;
+    color: white !important;}
+/*Profile nav*/
+.nav-tabs .nav-link{
+    background: black;
+    color: white !important;
+    border: 0;}
+
+/*HTML Profile*/
+#fraProfileHTML{
+    color: magenta;}
+/*HTML Den*/
+#fraDenHTML{
+    color: cyan;}
+
+/*Leader + Featured + Caves Box*/
+/*
+#main table = Leader + Featured
+#main table th = All table headers
+#main table th a = All header colour
+#main table tr = All table's main body background
+#main table .card-body = All wolf footnote area
+#main table .card-body .text-light = All wolf name area
+#main table .btn(:hover) = Collapse/Expand/Update button
+*/
+#main table th{
+    background: blue;}
+#main table th a{
+    color: green !important;}
+#main table tr{
+    background: black;
+    color: green;}
+#main table .card-body{
+    background: cyan !important;
+    color: red;}
+#main table .card-body .text-light{
+    background: black !important;
+    color: pink !important;}
+#main table .btn{
+    background: black;
+    color: white;
+    border: 0;}
+#main table .btn:hover{
+    background: white;
+    color: black;}
+#main table .bottom{
+    background: green;}
+
+/*Create a New Cave*/
+/*
+#main .card.mb-3 = Entire
+#main .card.mb-3 span = numbers /?
+#main .card.mb-3 b = numbers ?/ 
+*/
+#main .card.mb-3{
+    background: red;
+    color: blue;}
+#main .card.mb-3 span{
+    color: black !important;}
+#main .card.mb-3 b{
+    color: white !important;}
+
+/*Bar in HTML section with all the buttons*/
+#fraHTMLInputBar{
+    background: white;}
+#fraHTMLInputBar .btn{
+    background: black;
+    color: purple;}
+#fraHTMLInputBar .btn:hover{
+    background: grey;
+    color: white;}
+
+/*Expand Territory + Add Immortal Slot*/
+#main .mt-3 .card-header{
+    background: salmon !important;}
+#main .mt-3 .card-body{
+    background:  black;
+    color: red;}
+#main .mt-3 .btn{
+    background: red;
+    color: pink;
+    border: 0;}
+#main .mt-3 .btn:hover{
+    background: pink;
+    color: white;
+    border: 0;}
+
+
+
+/*Sidebar*/
+
+#sidebar{
+    background: cornflowerblue;
+    color: black;}
+#sidebar .card{
+    border: 0;
+    background: darkgrey;}
+#sidebar span{
+    color: pink !important;}
+
+    
+
+/*Chat*/
+/*
+#chatboxContainer = Chat card background
+#label_currentChannel = Current channel with dropdown menu hidden
+#fraChatChannelMenu = Dropdown menu background
+#fraChatChannelMenu button = Individual dropdown menu items
+#fraChatChannelMenu .channelSwitcher.active = Current channel in dropdown menu
+#btnChatSettings .fa-cog = Cog symbol
+.s-chat-message = chat message designs alternate consecutively
+*/
+#chatboxContainer{
+    background: cyan;}
+#chatboxContainer a{
+    color: purple !important;}
+#chatboxContainer a:hover{
+    color: magenta;}
+#label_currentChannel{
+    background: orange !important;
+    color: red !important;}
+#fraChatChannelMenu{
+	background: white !important;}
+#fraChatChannelMenu button{
+    background: navy !important;
+	color: pink !important}
+#fraChatChannelMenu button:hover{
+    background: red !important;
+	color: pink !important}
+#fraChatChannelMenu .channelSwitcher.active{
+	background: black !important;
+	color: white !important;}
+#btnChatSettings .fa-cog{
+    color: purple !important;}
+#chatMessagePinned{
+    background: gold !important;
+    color: silver !important;}
+#btnLoadNewMessages{
+    background: white !important;
+    color: black !important;}
+.s-chat-message:nth-child(odd){
+    background: navy !important;
+    color: crimson !important;}
+.s-chat-message:nth-child(even){
+    background: cyan !important;
+    color: pink !important;}
+.s-chat__username{
+    color: lime !important;}
+.s-chat-message_timestamp{
+    color: salmon !important;}
+.s-chat-message_menu{
+    color: yellow !important;}
+#txtChatInput{
+    background: silver !important;}
+#btnChatSend{
+    background: gold !important;
+    color: silver !important;}
+#btnChatSend:hover{
+    background: yellow !important;
+    color: white !important;}
+.s-chat-error_screen{
+    background: green !important;
+    color: cornflowerblue;}
+.s-chat-error_screen button{
+    background: red !important;
+    color: pink !important;
+    border: 0;}
+.s-chat-error_screen button:hover{
+    background: navy !important;
+    color: blue !important;}
+
+
+
+/*Footer*/
+/*
+Bottom of page
+*/
+#footer{
+    background: white;}
+#footer span{
+    color: black !important;}
+
+
+
+
+/*Profile Optimisation*/
+#main table td.left{
+    background: cyan !important;}
+#main .form-row .card-body{
+    background: silver !important;
+    color: blue !important;}
+#main .text-success{
+    color: pink !important;}
+
+
+
+
+
+
+/*Additional Code */
+
+
+/*Overwrite Link Designs*
+/*
+(Add area selector here) a{
+color: (color) !important;} 
+(Add area selector here) a:hover{
+color: (color) !important;} 
+*/
+
+/*Font Awesome Example*/
+/*Change sc & gc icon*/
+/*
+#header .navbar-status .icon{
+    display: none;}
+#header .navbar-status .user_current_sc:before{
+    color:var(--bg3);
+    content: "\f520";
+    font-family: var(--awe)  !important;}
+#header .navbar-status .user_current_gc:before{
+    color:var(--al1);
+    content: "\f6be";
+    font-family: var(--awe)  !important;}
+*/
