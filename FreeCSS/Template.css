@@ -105,6 +105,10 @@ a:hover{
 #header .navbar-status{
     background: ;
     color: ;}
+#header .navbar-status a{
+	color: ;}
+header .navbar-status a:hover{
+	color: ;}
 .dropdown-menu{
     background: ;}
 #header .btn{
