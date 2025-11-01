@@ -1,1 +1,468 @@
 
+/*Template*/
+
+
+
+@font-face{
+    font-family: "Branda";
+    src: url("https://raw.githubusercontent.com/Athiropi/Wolvden/main/Fonts/Branda-yolq.ttf") format("truetype");}
+
+/*Global*/
+:root{
+    --bg1: rgb(0, 0, 0);
+    --bg2: rgb(34, 34, 34);
+    --bg3: rgb(68, 68, 68);
+    --bg4: rgb(102, 102, 102);
+    
+    --hi1: #fff;
+    --hi2: rgb(221, 221, 221);
+    --hi3: rgb(187, 187, 187);
+    --hi4: rgb(153, 153, 153);
+    
+    --ma1: rgb(241, 61, 61);
+    --ma2: rgb(193, 42, 42);
+    --ma3: rgb(130, 12, 12);
+    --ma4: rgb(86, 2, 2);
+    --ma5: rgb(56, 1, 1);
+
+    --bo1: 4px double var(--bg4);
+    
+    --awe: 'Font Awesome 5 Free' !important;
+}
+
+/*Whole page*/
+body{
+    font-family: "Branda";
+    /*Credits Richard Loewen on Unsplash    Original: https://unsplash.com/photos/brown-leafless-trees-during-daytime-HZbT15nVfaM*/
+    background: url("https://raw.githubusercontent.com/Athiropi/Wolvden/main/FreeCSS/HalloweenEerie/background-rloewen.jpeg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    filter: invert(5%);
+    color: var(--ma4);}
+
+span{
+    color: var(--ma4) !important;}
+
+/*Links*/
+a{color: var(--ma5) !important;}
+a:hover{
+    color: var(--ma3) !important;
+    text-decoration: none;}
+
+/*Buttons*/
+.btn{
+    background: var(--ma5);
+    color: var(--hi3);
+    border: 0;}
+.btn:hover{
+    background: var(--hi3);
+    color: var(--ma2);}
+
+/*Typing + Dropdown area (Caves + Den Options)*/
+.form-control{
+    background: var(--hi2) !important;
+    color: var(--ma3) !important;}
+
+
+
+/*Header*/
+
+
+/*Top part of header*/
+#header .navbar-main{
+    background:rgba(0,0,0,0.6);
+    border-left: 2px double var(--bg3);
+    border-right: 2px double var(--bg3);}
+#main-menu .navbar-nav{
+    flex: 0 0 100%;
+    justify-content: space-between;}
+#header .navbar-main .nav-item .fa{color: var(--bg1);}
+#header .navbar-main .nav-item a{color: var(--hi1) !important;}
+#header .navbar-main .nav-item:hover .fa, #header .navbar-main .nav-item:hover a{color: var(--ma3) !important;}
+
+/*Middle part of header*/
+#header .navbar-status{
+    background: rgba(255,255,255,0.3);
+    color: var(--ma3);
+    border-left: 2px double var(--bg4);
+    border-right: 2px double var(--bg4);
+    border-top: 3px double var(--ma4);
+    border-bottom: 3px double var(--ma4);}
+#header .navbar-status a{color: var(--ma3);}
+#header .navbar-status a:hover{
+    color: var(--ma2);
+    text-shadow: 0 0 2px var(--ma3);}
+#header .navbar-status .icon{
+    display: none;}
+#header .navbar-status .user_current_sc:before{
+    color:var(--hi4);
+    content: "\f520";
+    font-family: var(--awe)  !important;}
+#header .navbar-status .user_current_gc:before{
+    color:var(--bg2);
+    content: "\f520";
+    font-family: var(--awe)  !important;}
+.dropdown-menu{
+    background: rgba(153,153,153,0.6);
+    border: 3px double var(--hi4);}
+#header .btn{
+    background: none;
+    color: var(--bg1) !important;}
+#header .dropdown-item{
+    background: none;
+    color: var(--hi1) !important}
+
+/*Bottom part of header*/
+#header .breadcrumb-nav{
+    background: rgba(0,0,0,0.3);
+    border-left: 2px double var(--bg4);
+    border-right: 2px double var(--bg4);
+    border-bottom: 3px double var(--hi4);
+    margin-bottom: 1rem;}
+.breadcrumb-item.active{
+    color: var(--hi1);}
+.fa-bookmark.text-danger::before{
+    color: var(--ma4);}
+.breadcrumb.col-lg-9.ml-auto.text-break::after {
+	content: "CSS by #185626";
+	color: var(--ma4);
+	font-size: 14px;
+	position: absolute;
+	right: 2rem;}
+
+
+
+/*Both main and sidebar*/
+.progress{
+    background: var(--bg2);
+    border: 1px solid var(--bg1) !important;}
+#sidebar .bg-success{
+    transition: filter 3s, color 3s;
+    background: var(--ma2) !important;}
+#sidebar .bg-warning{
+    transition: filter 3s, color 3s;
+    background: var(--ma2) !important;}
+#sidebar .bg-primary{
+    transition: filter 3s, color 3s;
+    background: var(--ma3) !important;}
+#sidebar .bg-danger{
+    transition: filter 3s, color 3s;
+    background: var(--ma4) !important;}
+#sidebar .bg-info{
+    transition: filter 3s, color 3s;
+    background: var(--ma5) !important;}
+
+
+
+/*Main*/
+#main{
+    background: rgba(0,0,0,0.5);
+    border: 3px double var(--bg4);}
+/*Your pack name at top of main*/
+#main > h1{
+    text-align: center;
+    font-size: 50px;
+    color: var(--ma3);
+    text-shadow: 0 10px var(--ma5);
+    transition: text-shadow 0.2s;}
+#main > h1:hover{
+    text-shadow: 0 0 5px red;
+    transition: text-shadow 0.3s}
+
+/*Alerts*/
+.alert{
+    background: rgba(255,255,255,0.5);
+    border: 3px double var(--bg3);
+    color: var(--ma3)}
+
+/*Nav Tabs*/
+.nav-tabs{
+    border: 0;
+    justify-content: space-evenly;
+    font-size: 0;}
+#main .nav-tabs .nav-link{
+    background: none;
+border: 0;}
+/*Den Nav*/
+.nav-tabs .nav-item:first-child a:before{
+    font-size: 20px !important;
+    font-family: var(--awe) !important;
+    content: "\f1b0";
+    color: var(--ma4);}
+/*Profile Nav*/
+#main .nav-tabs .nav-item:last-child a:before{
+    font-size: 20px !important;
+    font-family: var(--awe) !important;
+    content: "\f717";
+    color: var(--ma4);}
+#main .nav-tabs .nav-item:last-child a:hover:before, #main .nav-tabs .nav-item:first-child a:hover:before{
+    text-shadow: 0 0 10px var(--ma5);
+    color: var(--ma3);}
+
+/*HTML Profile + Den*/
+#fraProfileHTML,#fraDenHTML{
+    color: var(--ma5);}
+
+/*Leader + Featured + Caves Box*/
+#main table{
+    border: 3px double var(--bg3);
+    text-align: center;
+    background: none;}
+#main table th{
+    background: none;}
+#main table th a{
+    color: var(--ma4) !important;
+    font-size: 30px;
+    text-shadow: 0 0 5px var(--bg1);}
+#main table i{
+    color: var(--hi1);}
+#main table tr{
+    background:  rgba(255,255,255,0.1); ;
+    color: var(--hi2);}
+#main table .card.mb-3 .card-body{display:none;}
+#main table .card.mb-3{
+    transition: filter 5s;
+    border: var(--bo1);
+    filter: opacity(70%) grayscale(60%);}
+#main table .card.mb-3:hover{
+    transition: filter 1s;
+    filter: opacity(100%) grayscale(0%);}
+#main .featured-wolf img{
+    border: var(--bo1);
+    filter: opacity(70%) grayscale(60%);
+    transition: filter 5s;}
+#main .featured-wolf img:hover{
+    border: var(--bo1);
+    filter: opacity(100%) grayscale(0%);
+    transition: filter 1s;}
+#main table .card-body{
+    transition: filter 3s, color 3s;
+    border: var(--bo1);
+    filter: opacity(60%) grayscale(60%);
+    background:rgba(34,34,34,0.5) !important;
+color: var(--hi4);}
+#main form table .card-body:hover{
+    transition: filter 1s, color 1s;
+    border: var(--bo1);
+    filter: opacity(100%) grayscale(0%);
+    background:rgba(34,34,34,0.5) !important;
+color: var(--ma2)}
+#main table .card-body a > img{
+    border: 3px double var(--bg4);}
+#main table .card-body .text-light{
+    background: none !important;
+    color: var(--ma3) !important;}
+#main table .btn, #sidebar .btn, #btnChatSend, #chatMessageContainer > div.s-chat-error_screen > p:nth-child(3) > button{
+    background: var(--ma5) !important;
+    color: var(--hi3) !important;
+    border: 0 !important}
+#main table .btn:hover, #sidebar .btn:hover, #btnChatSend:hover, #chatMessageContainer > div.s-chat-error_screen > p:nth-child(3) > button:hover{
+    background: var(--hi3) !important;
+    color: var(--ma2) !important;}
+#main table .bottom{
+    background: none;}
+#main .bg-success{
+    transition: filter 5s, color 5s;
+    filter: grayscale(100%);
+    background: var(--ma2) !important;}
+#main .bg-warning{
+    transition: filter 5s, color 5s;
+    filter: grayscale(100%);
+    background: var(--ma2) !important;}
+#main .bg-primary{
+    transition: filter 5s, color 5s;
+    filter: grayscale(100%);
+    background: var(--ma3) !important;}
+#main .bg-danger{
+    transition: filter 5s, color 5s;
+    filter: grayscale(100%);
+    background: var(--ma4) !important;}
+#main .bg-info{
+    transition: filter 5s, color 5s;
+    filter: grayscale(100%);
+    background: var(--ma5) !important;}
+#main form table .card-body:hover .bg-success, #main form table .card-body:hover .bg-warning,#main form table .card-body:hover .bg-danger, #main form table .card-body:hover .bg-info, #main form table .card-body:hover .bg-primary{
+    transition: filter 1s, color 1s;
+    filter: grayscale(0%);}
+
+/*Den Cards*/
+#denCards .card{filter: grayscale(100%);
+    transition: filter 5s;
+    border: 3px double var(--bg2)}
+#denCards .card:hover{filter: 
+    grayscale(100%) invert(100%);
+    transition: filter 1s;}
+
+/*New Cave*/
+#main .card.mb-3{
+    background: rgba(255,255,255,0.3);
+    border: 3px double var(--bg3);}
+#main .card.mb-3 span{
+    color: var(--ma3) !important;}
+#main .card.mb-3 b{
+    color: var(--ma1) !important;}
+
+/*HTML Button Bar*/
+#fraHTMLInputBar{
+    background: var(--ma5);}
+#fraHTMLInputBar .btn{
+    background: var(--ma4);
+    color: var(--hi2);}
+#fraHTMLInputBar .btn:hover{
+    background: var(--hi2);
+    color: var(--ma4);}
+
+/*Expand Territory + Add Immortal Slot*/
+#main .mt-3 .card-header{
+    background: rgba(255,255,255,0.5) !important;}
+#main .mt-3 .card-body{
+    background: rgba(255,255,255,0.3);}
+
+
+
+
+/*Sidebar*/
+
+#sidebar{
+    background: rgba(0,0,0,0.6);
+    color: var(--hi1);}
+#sidebar .card{
+    border: 3px double var(--hi4);
+    background: rgba(255,255,255,0.2);}
+#sidebar span{
+    color: var(--hi1) !important;}
+
+    
+
+/*Chat*/
+/*
+#chatboxContainer = Chat card background
+#label_currentChannel = Current channel with dropdown menu hidden
+#fraChatChannelMenu = Dropdown menu background
+#fraChatChannelMenu button = Individual dropdown menu items
+#fraChatChannelMenu .channelSwitcher.active = Current channel in dropdown menu
+#btnChatSettings .fa-cog = Cog symbol
+.s-chat-message = chat message designs alternate consecutively
+*/
+/*
+#chatboxContainer a{
+    color: var(--ma) !important;}
+#chatboxContainer a:hover{
+    color: !important;}
+	color:  !important}
+#fraChatChannelMenu button{
+    background:  !important;
+	color:  !important}
+#fraChatChannelMenu button:hover{
+    background:  !important;
+	color:  !important}
+#btnChatSend{
+    background:  !important;
+    color:  !important;}
+#btnChatSend:hover{
+    background:  !important;
+    color:  !important;}
+.s-chat-error_screen button{
+    background:  !important;
+    color:  !important;
+    border: 0;}
+.s-chat-error_screen button:hover{
+    background:  !important;
+    color:  !important;}
+*/
+#label_currentChannel{
+    background: rgba(0,0,0,0.5) !important;
+    color: var(--hi1) !important;}
+#fraChatChannelMenu{
+	background: rgba(0,0,0,0.8) !important;}
+#fraChatChannelMenu .channelSwitcher.active{
+	background: rgba(255,255,255,0.5) !important;
+	color: var(--bg1) !important;}
+#btnChatSettings .fa-cog{
+    color: var(--hi1) !important;}
+#chatMessagePinned{
+    background: var(--hi4) !important;
+    color: var(--ma3) !important;}
+#btnLoadNewMessages{
+    background: var(--hi4) !important;
+    color: var(--ma3) !important;}
+.s-chat-message:nth-child(odd){
+    background: var(--hi2) !important;
+    color: var(--bg2) !important;}
+.s-chat-message:nth-child(even){
+    background: var(--hi3) !important;
+    color: var(--bg2) !important;}
+.s-chat__username{
+    color: var(--ma5) !important;}
+.s-chat-message_timestamp{
+    color: var(--ma5) !important;}
+.s-chat-message_menu{
+    color: var(--ma1) !important;}
+#txtChatInput{
+    background: var(--hi3) !important;}
+.s-chat-error_screen{
+    background: rgba(0,0,0,0.5) !important;
+    color: var(--hi1);}
+
+
+
+/*Footer*/
+#footer{
+    margin-top: 1rem;
+    background: rgba(0,0,0,0.5);
+    border-top: 3px double var(--bg4);
+    border-left: 3px double var(--bg4);
+    border-right: 3px double var(--bg4);}
+
+
+
+
+
+/*Profile Optimisation*/
+#main table td.left{
+    background: rgba(0,0,0,0.1) !important;}
+#main table .floatright a{
+    font-size: 20px ;}
+#main .form-row .card-body{
+    background: var(--ma4) !important;}
+#main .text-success{
+    color: var(--ma2) !important;}
+#main .mb-2 img, #main .group-banner, #main .user-tag{
+    transition: filter 1s, box-shadow 1s;
+    filter: opacity(60%) grayscale(50%);
+    border: 3px double var(--hi4);}
+#main .mb-2 img:hover, #main .group-banner:hover, #main .user-tag:hover{
+    filter: opacity(100%) grayscale(0%);
+    border: 3px double var(--hi4);
+    box-shadow: 0 0 30px white;}
+
+
+
+
+
+
+/*Additional Code */
+
+
+/*Overwrite Link Designs*
+/*
+(Add area selector here) a{
+color: (color) !important;} 
+(Add area selector here) a:hover{
+color: (color) !important;} 
+*/
+
+/*Font Awesome Example*/
+/*Change sc & gc icon*/
+/*
+#header .navbar-status .icon{
+    display: none;}
+#header .navbar-status .user_current_sc:before{
+    color:var(--bg3);
+    content: "\f520";
+    font-family: var(--awe)  !important;}
+#header .navbar-status .user_current_gc:before{
+    color:var(--al1);
+    content: "\f6be";
+    font-family: var(--awe)  !important;}
+*/
