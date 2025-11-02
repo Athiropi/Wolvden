@@ -27,8 +27,18 @@
 
     --bo1: 4px double var(--bg4);
     
-    --awe: 'Font Awesome 5 Free' !important;
-}
+    --awe: 'Font Awesome 5 Free' !important;}
+
+::-webkit-scrollbar {
+	width: 0.3rem;} 
+::-webkit-scrollbar-track {
+	background: var(--bg3);} 
+::-webkit-scrollbar-thumb {
+  background: var(--hi3) !important;}
+/*Brief desc when hovering (e.g. Hovering over Energt shows percentage*/
+.tooltip-inner {
+	background: rgba(153,153,153,0.6);
+	color: var(--hi1);}
 
 /*Whole page*/
 body{
@@ -388,6 +398,12 @@ border: 0;}
     color: var(--hi1) !important;}
 #fraChatChannelMenu{
 	background: rgba(0,0,0,0.8) !important;}
+#fraChatChannelMenu .channelSwitcher{
+	background: var(--bg1);
+	color: var(--ma4) !important;}
+#fraChatChannelMenu .channelSwitcher:hover{
+	background: var(--bg2);
+	color: var(--ma5) !important;}
 #fraChatChannelMenu .channelSwitcher.active{
 	background: rgba(255,255,255,0.5) !important;
 	color: var(--bg1) !important;}
@@ -436,6 +452,8 @@ border: 0;}
     background: rgba(0,0,0,0.1) !important;}
 #main table .floatright a{
     font-size: 20px ;}
+#main .form-row .card-body.p-2{
+    background: var(--bg4) !important;}
 #main .text-success{
     color: var(--ma2) !important;}
 #main .mb-2 img, #main .group-banner, #main .user-tag{
