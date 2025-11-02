@@ -252,6 +252,12 @@ border: 0;}
 #main .badge-info{
     background: var(--bg2);
     color: var(--hi3) !important;}
+.fa-venus{
+	color: #772a2a !important;
+	text-shadow: 0 0 1px white;}
+.fa-mars{
+	color: #3f2b7d !important;
+	text-shadow: 0 0 1px white;}
 #main table .card-body a > img{
     border: 3px double var(--bg4);}
 #main table .card-body .rounded-bottom.pl-3{
