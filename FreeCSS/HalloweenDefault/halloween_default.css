@@ -401,7 +401,7 @@ a:hover{
 	background: var(--al2) !important;
 	color: var(--al3) !important;}
 #btnChatSettings .fa-cog{
-    background: none;
+    background: none !important;
     color: white !important;}
 #chatMessagePinned,#btnLoadNewMessages{
     background: var(--al0) !important;
