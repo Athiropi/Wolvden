@@ -396,11 +396,11 @@ a:hover{
 	color: var(--mi0) !important;}
 #fraChatChannelMenu .channelSwitcher:hover{
 	background: var(--bg2);
-	color: var(--al2);}
+	color: var(--al2) !important;}
 #fraChatChannelMenu .channelSwitcher.active{
 	background: var(--al2) !important;
 	color: var(--al3) !important;}
-#btnChatSettings .fa-cog{
+#btnChatSettings{
     background: none !important;
     color: white !important;}
 #chatMessagePinned,#btnLoadNewMessages{
