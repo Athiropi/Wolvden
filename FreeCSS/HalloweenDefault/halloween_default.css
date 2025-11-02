@@ -50,9 +50,9 @@ See bottom of CSS sheet to see an example of how to use them.
 
 /*Scrollbar*/
 ::-webkit-scrollbar {
-	width: 0.3rem;} 
+	width: 0.3rem !important;} 
 ::-webkit-scrollbar-track {
-	background: var(--bg2);} 
+	background: var(--bg2) !important;} 
 ::-webkit-scrollbar-thumb {
   background: var(--al0) !important;}
 /*Brief desc when hovering (e.g. Hovering over Energt shows percentage*/
