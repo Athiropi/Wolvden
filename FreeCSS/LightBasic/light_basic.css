@@ -286,21 +286,21 @@ a:hover{
     background: none !important;
     color: white !important;}
 #chatMessagePinned, #btnLoadNewMessages{
-    background: var(--hi1) !important;
-    color: var(--hi4) !important;}
+    background: var(--hi4) !important;
+    color: var(--hi1) !important;}
 .s-chat-message:nth-child(odd){
-    background: var(--hi1) !important;
-    color: white !important;}
+    background: rgba(180, 223, 229,0.3) !important;
+    color: black !important;}
 .s-chat-message:nth-child(even){
-    background: var(--gc1) !important;
-    color: white !important;}
+    background: rgba(242,239,170,0.3) !important;
+    color: black !important;}
 .s-chat__username, .s-chat-message_timestamp{
     color: var(--hi4) !important;}
 #txtChatInput{
-    background: var(--hi2) !important;
+    background: var(--hi3) !important;
     color: white !important;}
 .s-chat-error_screen{
-    background: var(--hi2) !important;
+    background: rgba(180, 223, 229,0.3) !important;
     color: white ;}
 
 
