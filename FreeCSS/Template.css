@@ -229,6 +229,11 @@ header .navbar-status a:hover{
     color: ;}
 #main table .bottom{
     background: ;}
+.badge-info{
+	background: ;
+	color: ;}
+.fa-venus{color: ;}
+.fa-mars{color: ;}
 
 /*Den Cards*/
 #denCards .card{
