@@ -48,6 +48,18 @@ See bottom of CSS sheet to see an example of how to use them.
     --awe: 'Font Awesome 5 Free' !important;
 }
 
+/*Scrollbar*/
+::-webkit-scrollbar {
+	width: 0.3rem;} 
+::-webkit-scrollbar-track {
+	background: var(--bg2);} 
+::-webkit-scrollbar-thumb {
+  background: var(--al0) !important;}
+/*Brief desc when hovering (e.g. Hovering over Energt shows percentage*/
+.tooltip-inner {
+	background: var(--bg2);
+	color: var(--al2);}
+
 /*Whole page*/
 /*
 Add page background here (+ Credits)
@@ -378,10 +390,16 @@ a:hover{
     background: rgba(25,15,36,0.8) !important;
     color: var(--al3) !important;}
 #fraChatChannelMenu{
-	background: rgba(25,15,36,0.5) !important;}
+	background: rgba(25,15,36,0.8) !important;}
+#fraChatChannelMenu .channelSwitcher{
+	background: var(--bg1);
+	color: var(--bg2);}
+#fraChatChannelMenu .channelSwitcher:hover{
+	background: var(--bg2);
+	color: var(--mi0);}
 #fraChatChannelMenu .channelSwitcher.active{
-	background: var(--bg2) !important;
-	color: var(--al2) !important;}
+	background: var(--al2) !important;
+	color: var(--al3) !important;}
 #btnChatSettings .fa-cog{
     background: none;
     color: white !important;}
