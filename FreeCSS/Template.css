@@ -221,6 +221,8 @@ header .navbar-status a:hover{
 #main table .card-body .text-light{
     background:  !important;
     color:  !important;}
+#main table .card-body .rounded-bottom.pl-3{
+    padding: 0 !important;}
 #main table .btn{
     background: ;
     color: ;}
@@ -379,7 +381,7 @@ Bottom of page
 /*Profile Optimisation*/
 #main table td.left{
     background:  !important;}
-#main .form-row .card-body{
+#main .form-row .card-body.p-2{
     background:  !important;
     color:  !important;}
 #main .text-success{
@@ -404,14 +406,16 @@ color: (color) !important;}
 /*Font Awesome Example*/
 /*Change sc & gc icon*/
 /*
-#header .navbar-status .icon{
-    display: none;}
-#header .navbar-status .user_current_sc:before{
-    color:var(--bg3);
-    content: "\f520";
+#header .navbar-status .icon, .icon-beetle-silver, .icon-beetle-gold{
+    visibility: hidden;}
+.icon-beetle-silver:before{
+    visibility: visible;
+    color: ;
+    content: "\";
     font-family: var(--awe)  !important;}
-#header .navbar-status .user_current_gc:before{
-    color:var(--al1);
-    content: "\f6be";
+.icon-beetle-gold:before{
+    visibility: visible;
+    color: ;
+    content: "\";
     font-family: var(--awe)  !important;}
 */
