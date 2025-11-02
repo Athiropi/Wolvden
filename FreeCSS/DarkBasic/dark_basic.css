@@ -10,11 +10,11 @@ Please do not remove any credits.
 
 /*Global settings*/
 :root{
-    --bg1: black;
+    --bg1: #000;
     --bg2: #222;
     --bg3: #444;
     --bg4: #666;
-    --hi1: white;
+    --hi1: #fff;
     --hi2: #ddd;
     --hi3: #bbb;
     --hi4: #999;
@@ -134,8 +134,8 @@ a:hover{
 .container:nth-of-type(4){box-shadow: 0 0 5px var(--bg1)}
 /*Progress bars*/
 .progress{
-    background: var(--bg2) !important;
-    border: 1px solid var(--bg3);}
+    background: var(--bg1) !important;
+    border: 1px solid var(--bg1);}
 .bg-success{background: var(--war) !important;}
 .bg-warning{background: var(--war) !important;}
 .bg-primary{background: var(--pri) !important;}
@@ -301,16 +301,16 @@ a:hover{
     color: var(--hi1) !important;}
 .s-chat-message:nth-child(odd){
     background: var(--bg2) !important;
-    color: var(--hi4) !important;}
-.s-chat-message:nth-child(even){
-    background: var(--bg3) !important;
     color: var(--hi3) !important;}
+.s-chat-message:nth-child(even){
+    background: #111 !important;
+    color: var(--hi2) !important;}
 .s-chat__username{
-    color: var(--bg1) !important;}
+    color: var(--hi2) !important;}
 .s-chat-message_timestamp{
-    color: var(--bg1) !important;}
+    color: var(--hi2) !important;}
 .s-chat-message_menu{
-    color: var(--bg1) !important;}
+    color: var(--hi2) !important;}
 #txtChatInput{
     background: var(--bg2) !important;
     color: var(--hi4) !important}
