@@ -38,6 +38,18 @@ See bottom of CSS sheet to see an example of how to use them.
     --awe: 'Font Awesome 5 Free' !important;
 }
 
+/*Scrollbar*/
+::-webkit-scrollbar {
+	width: ;} 
+::-webkit-scrollbar-track {
+	background: ;} 
+::-webkit-scrollbar-thumb {
+  background:  !important;}
+/*Brief desc when hovering (e.g. Hovering over Energt shows percentage*/
+.tooltip-inner {
+	background: ;
+	color: ;}
+
 /*Whole page*/
 /*
 Add page background here (+ Credits)
