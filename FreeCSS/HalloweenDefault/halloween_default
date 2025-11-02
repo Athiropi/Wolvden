@@ -428,7 +428,7 @@ Bottom of page
 /*Profile Optimisation*/
 #main table td.left{
     background: rgba(15,25,36,0.2) !important;}
-#main .form-row .card-body{
+#main .form-row .card-body.p-2{
     background: var(--bg2) !important;
     color: var(--hi2) !important;}
 #main .text-success{
@@ -440,34 +440,3 @@ Bottom of page
     border: 1px solid var(--al1);}
 #main table tr td{
     background: rgba(0,0,0,0.1);}
-
-
-
-
-
-
-/*Additional Code */
-
-
-/*Overwrite Link Designs*
-/*
-(Add area selector here) a{
-color: (color) !important;} 
-(Add area selector here) a:hover{
-color: (color) !important;} 
-*/
-
-/*Font Awesome Example*/
-/*Change sc & gc icon*/
-/*
-#header .navbar-status .icon{
-    display: none;}
-#header .navbar-status .user_current_sc:before{
-    color:var(--bg3);
-    content: "\f520";
-    font-family: var(--awe)  !important;}
-#header .navbar-status .user_current_gc:before{
-    color:var(--al1);
-    content: "\f6be";
-    font-family: var(--awe)  !important;}
-*/
