@@ -1,0 +1,473 @@
+/*Template*/
+/*Template by #185626*/
+/*Stuff to note:
+-Color refers to the text colour
+-Background/background-image controls the background image/colour
+-Chat section is a bit harder to test because you can't see the changes in Stylus (or at least I can't!). It should work when you have uploaded your CSS sheet to your den/profile.
+
+Interested in more complex designs? Check out these sites for more in-depth explanations about CSS techniques:
+https://developer.mozilla.org/en-US/docs/Web/CSS
+https://www.w3schools.com/css/css3_fonts.asp
+*/
+
+
+
+/*Import a font style*/
+/*
+Font family - how it will be called
+Src - Link to file
+Format - .tff = truetype, .otf = opentype, .woff = woff
+*/
+@font-face{
+    font-family: "Emily's Candy";
+    src: url("https://raw.githubusercontent.com/Athiropi/Wolvden/main/Fonts/EmilysCandy-Regular.ttf") format("truetype");}
+
+/*Global settings*/
+/*
+Lines starting with -- are variables (eg. --bg1)
+This means you can just put the variable name (eg. bg1) 
+instead of the value (eg rgb(25,15,36).
+Font Awesome allows you to use symbols. Find symbols here: fontawesome.com/search
+See bottom of CSS sheet to see an example of how to use them.
+*/
+:root{
+    --bg1: rgb(25, 15, 36);
+    --bg2: rgb(52,30,75);
+    --bg3: rgb(92, 56, 128);
+    --mi0: rgb(74, 18, 133);
+    --mi1: rgb(117, 41, 197);
+    --mi2: rgb(156, 69, 249);
+    --hi1: rgb(229, 209, 249);
+    --hi2: rgb(194, 165, 223);
+    --al0: rgb(170, 103, 28);
+    --al1: rgb(210, 131, 41);
+    --al2: rgb(247, 162, 65);
+    --al3: rgb(255, 192, 121);
+    --re1: rgb(74,18,0);
+    
+    --awe: 'Font Awesome 5 Free' !important;
+}
+
+/*Whole page*/
+/*
+Add page background here (+ Credits)
+Background already set to fit webpage and remain still
+*/
+body{
+    font-family: "Emily's Candy";
+    /*Credits: Alla Kemelmakher on Unsplash     Original:https://unsplash.com/photos/a-spider-web-hanging-from-a-tree-branch-VswOKBlwYd0*/
+    background: url("https://raw.githubusercontent.com/Athiropi/Wolvden/main/FreeCSS/HalloweenDefault/background-akemelmakher.jpeg");
+    background-size: cover;
+    background-attachment: fixed;
+    color: var(--mi1);}
+
+/*Sets some of the text (welcome back, sc/gc/messages/modbox, sidebar stats, nursing, Year)*/
+span{
+    color:  var(--mi23)!important;}
+
+/*Links*/
+/*Sets link details*/
+a{color:  var(--al2)!important;}
+/*Sets link appearance upon hover*/
+a:hover{
+    color: var(--al3) !important;
+    text-decoration: none;}
+
+/*Buttons - unless overrwritten elsewhere*/
+.btn{
+    background: var(--bg2) !important;
+    color: var(--mi2) !important;
+    border: 0 !important;}
+.btn:hover{
+    background: var(--al1) !important;
+    color: var(--al3) !important;}
+
+/*Typing + Dropdown area (Caves + Den Options)*/
+.form-control{
+    background: var(--bg2) !important;
+    color: var(--al1) !important;}
+
+
+
+/*Header*/
+
+/*Top part of header*/
+/*
+#header .navbar-main = Entire
+#main-menu .navbar-nav = Only link area (excluding Logo)
+#header .navbar-main .nav-item(:hover) .fa = controls icons
+*/
+#header .navbar-main{
+    background: rgba(25,15,26,0.9);
+    border-left: 1px groove var(--bg3);
+    border-right: 1px groove var(--bg3)}
+#main-menu .navbar-nav{
+    flex: 0 0 100%;
+    justify-content: space-between;}
+#header .navbar-main .nav-item .fa{display: none;}
+#header .navbar-main .nav-link{color: var(--bg3) !important;}
+#header .navbar-main .nav-link:hover{color: var(--al3) !important;}
+
+/*Middle part of header*/
+/*
+#header .navbar-status = entire
+.dropdown-menu = dropdown when clicking username
+.dropdown-item = each individual link area in dropdown
+*/
+#header .navbar-status{
+    background: rgba(74,18,0,0.5);
+    color: var(--al1);
+    border: 1px groove var(--al1);}
+#header .navbar-status .btn{
+    background: none !important;
+    color: white !important;}
+#header .navbar-status .btn:hover{
+    background: none !important;
+    color: black !important;}
+#header .navbar-status .icon, .icon-beetle-silver, .icon-beetle-gold{
+    visibility: hidden;}
+.icon-beetle-silver:before{
+    visibility: visible;
+    color: var(--bg3);
+    content: "\f520";
+    font-family: var(--awe)  !important;}
+.icon-beetle-gold:before{
+    visibility: visible;
+    color: var(--al2);
+    content: "\f6be";
+    font-family: var(--awe)  !important;}
+.dropdown-menu{
+    background: var(--bg2);}
+#header .btn{
+    background: none;}
+#header .dropdown-item{
+    background: var(--bg2);
+    color:  var(--hi1) !important}
+
+/*Bottom part of header*/
+/*
+#header .breadcrumb-nav = Entire
+.breadcrumb-item.active = your pack name
+*/
+#header .breadcrumb-nav{
+    background:rgba(25,15,26,0.8);
+    margin-bottom: 1rem;
+    border-left: 1px groove var(--mi0);
+    border-right: 1px groove var(--mi0);
+    border-bottom: 1px groove var(--bg3);
+    border-radius: 0 0 10px 10px;}
+.breadcrumb-item.active{
+    color: var(--al2);}
+.fa-bookmark.text-danger::before{
+    color: var(--al2);}
+.breadcrumb.col-lg-9.ml-auto.text-break::after {
+	content: "CSS by #185626";
+	color: var(--al1);
+	font-size: 14px;
+	position: absolute;
+	right: 2rem;}
+
+
+
+/*Both main and sidebar*/
+
+.container{
+    box-shadow: 0 0 15px black;
+    border-radius: 10px 10px 10px 10px;}
+.progress{
+    background: var(--re1) !important;
+    border: 1px solid var(--bg1) !important;}
+.bg-success{
+    background: var(--al3) !important;}
+.bg-warning{
+    background: var(--al3) !important;}
+.bg-primary{
+    background: var(--al2) !important;}
+.bg-danger{
+    background: var(--al1) !important;}
+.bg-info{
+    background: var(--al0) !important;}
+
+
+
+/*Main*/
+/*Big main box on the right*/
+
+#main{
+    background: rgba(25,15,36,0.7);
+    color: white;
+    border-radius: 0px 10px 10px 0px;}
+
+/*Your pack name at top of main*/
+#main > h1{
+    font-size: 50px;
+    text-align: center;
+    background-image: linear-gradient(to bottom right, var(--re1), var(--al3));
+    color: transparent;
+    background-clip: text;
+    box-shadow: 0 5px 7px -7px var(--al1);}
+
+/*Alerts (eg not 100% survival chance, hunters finished, etc)*/
+.alert{
+    background: rgba(15,25,36,0.8);
+    color: var(--al1);
+    border: 1px solid var(--bg3);
+    box-shadow: 0 0 3px var(--al1), 0 0 3px var(--al3);}
+
+/*Entire row with navigation to your den & profile in main*/
+.nav-tabs{
+    justify-content: center;
+    font-size: 0;
+    border: 0 !important;}
+.nav-tabs .nav-link{
+    background: none !important;
+    border: none;}
+/*Den nav*/
+.nav-tabs .nav-link.active:before{
+    font-size: 20px !important;
+    font-family: var(--awe) !important;
+    content: "\f6e2";
+    color: white;}
+/*Profile nav*/
+.nav-tabs .nav-link:before{
+    font-size: 20px !important;
+    font-family: var(--awe) !important;
+    content: "\f54c";
+    color: white;}
+.nav-tabs .nav-link:hover:before{
+    text-shadow: 0 0 10px var(--al3);
+    color: var(--al3);}
+
+
+#fraProfileHTML, #fraDenHTML{
+    color: white;}
+
+/*Leader + Featured + Caves Box*/
+/*
+#main table = Leader + Featured
+#main table th = All table headers
+#main table th a = All header colour
+#main table tr = All table's main body background
+#main table .card-body = All wolf footnote area
+#main table .card-body .text-light = All wolf name area
+#main table .btn(:hover) = Collapse/Expand/Update button
+*/
+#main .table .card.mb-3{background: none;}
+#main .table .card.mb-3 .card-body{display:none;}
+#main .table .card.mb-3 a:before {
+    position: absolute;
+	z-index: 1 !important;
+    display: inline-block;
+	content: '';
+	background-image: url('https://raw.githubusercontent.com/Athiropi/Wolvden/main/FreeCSS/HalloweenDefault/treeframe.jpg');
+	background-size: 100% auto;
+    background-repeat: no-repeat;
+    mix-blend-mode: multiply;
+	width: 295px;
+	height: 400px;
+	top: -22%;
+	left: -35%;
+	pointer-events:none;}
+#main .featured-wolf a:first-of-type:before {
+	z-index: 1 !important;
+    position: absolute;
+	content: '';
+    display: inline-block;
+	background-image: url('https://raw.githubusercontent.com/Athiropi/Wolvden/main/FreeCSS/HalloweenDefault/batframe.jpeg');
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+    mix-blend-mode: multiply;
+    top: -2%;
+	left: 9%;
+	width: 170px;
+	height: 200px;
+	pointer-events: none;}
+#main table img{
+    border-radius: 50% !important;}
+#main table{
+    text-align: center;}
+#main table th{
+    background: rgba(25,15,36,0.2);}
+#main table th a{
+    background-image: linear-gradient(to bottom right, var(--al1), var(--al3));
+    color: transparent;
+    background-clip: text;}
+#main table tr{
+    background: rgba(25,15,36,0.2);
+    box-shadow: 0 0 3px var(--bg3), 0 0 3px var(--al1);}
+#main table .card-body{
+    background: rgba(15,25,36,0.5) !important;
+    color: var(--al1);}
+#main table .card-body .text-light{
+    background: rgba(15,25,36,0.3) !important;
+    color: var(--al3) !important;}
+#main form  table .card-body a .rounded-bottom{
+    border: 3px double var(--bg3);}
+#main table .card-body .rounded-bottom.pl-3{
+    padding: 0 !important;}
+#main table .bottom{
+    background: rgba(15,25,36,0.2);}
+.badge-info{
+    background: var(--bg3);
+    color: white !important;}
+.fa-venus{color: #a06771;}
+.fa-mars{color: #396299;}
+
+/*Den Cards*/
+#denCards .card{
+    border: 1px solid black;}
+#denCards .card{
+    filter: grayscale(60%);}
+#denCards .card:hover{
+    filter: invert(100%);
+    transition: ease-out filter 0.3s}
+
+
+/*Create a New Cave*/
+/*
+#main .card.mb-3 = Entire
+#main .card.mb-3 span = numbers /?
+#main .card.mb-3 b = numbers ?/ 
+*/
+#main .card.mb-3{
+    background: rgba(15,25,36,0.5);
+    color: white;}
+#main .card.mb-3 span{
+    color: var(--mi2) !important;}
+#main .card.mb-3 b{
+    color: var(--al3) !important;}
+
+/*Bar in HTML section with all the buttons*/
+#fraHTMLInputBar{
+    background: var(--bg1);}
+
+/*Expand Territory + Add Immortal Slot*/
+#main .mt-3 .card{background: none;}
+#main .mt-3 .card-header{
+    background: rgba(15,25,36,0.5) !important;}
+#main .mt-3 .card-body{
+    background: rgba(15,25,36,0.5) !important;
+    color: white;}
+
+
+
+/*Sidebar*/
+
+#sidebar{
+    background: rgba(15,25,36,0.75);
+    color: var(--bg3);}
+#sidebar .card{
+    border: 0;
+    background: rgba(15,25,36,0.4);}
+#sidebar span{
+    color: var(--hi2) !important;}
+
+    
+
+/*Chat*/
+/*
+#chatboxContainer = Chat card background
+#label_currentChannel = Current channel with dropdown menu hidden
+#fraChatChannelMenu = Dropdown menu background
+#fraChatChannelMenu button = Individual dropdown menu items
+#fraChatChannelMenu .channelSwitcher.active = Current channel in dropdown menu
+#btnChatSettings .fa-cog = Cog symbol
+.s-chat-message = chat message designs alternate consecutively
+*/
+#label_currentChannel{
+    background: rgba(25,15,36,0.8) !important;
+    color: var(--al3) !important;}
+#fraChatChannelMenu{
+	background: rgba(25,15,36,0.5) !important;}
+#fraChatChannelMenu .channelSwitcher.active{
+	background: var(--bg2) !important;
+	color: var(--al2) !important;}
+#btnChatSettings .fa-cog{
+    background: none;
+    color: white !important;}
+#chatMessagePinned,#btnLoadNewMessages{
+    background: var(--al0) !important;
+    color: var(--hi2) !important;}
+.s-chat-message:nth-child(odd){
+    background: var(--bg1) !important;
+    color: var(--hi2) !important;}
+.s-chat-message:nth-child(even){
+    background: var(--bg2) !important;
+    color: var(--hi1) !important;}
+.s-chat__username{
+    color: var(--al1) !important;}
+.s-chat-message_timestamp{
+    color: var(--al1) !important;}
+.s-chat-message_menu{
+    color: white !important;}
+#txtChatInput{
+    background: var(--bg2) !important;
+    color: var(--al2) !important}
+.s-chat-error_screen{
+    background: var(--bg1) !important;
+    color: var(--al1);}
+
+
+
+/*Footer*/
+/*
+Bottom of page
+*/
+#footer{
+    background: rgba(15,25,36,0.9);
+    border-top: 1px solid var(--mi0);
+    border-left: 1px solid var(--mi0);
+    border-right: 1px solid var(--mi0);
+    margin-top: 1rem;
+    border-radius: 10px 10px 0 0;
+    color: var(--al1);}
+
+
+
+
+/*Profile Optimisation*/
+#main table td.left{
+    background: rgba(15,25,36,0.2) !important;}
+#main .form-row .card-body{
+    background: var(--bg2) !important;
+    color: var(--hi2) !important;}
+#main .text-success{
+    color: var(--al3) !important;}
+.user-tag{
+    border:5px double var(--al3);
+    box-shadow: 0 0 10px var(--al3);}
+#main .float-left.mr-2, #main .group-banner img{
+    border: 1px solid var(--al1);}
+#main table tr td{
+    background: rgba(0,0,0,0.1);}
+
+
+
+
+
+
+/*Additional Code */
+
+
+/*Overwrite Link Designs*
+/*
+(Add area selector here) a{
+color: (color) !important;} 
+(Add area selector here) a:hover{
+color: (color) !important;} 
+*/
+
+/*Font Awesome Example*/
+/*Change sc & gc icon*/
+/*
+#header .navbar-status .icon{
+    display: none;}
+#header .navbar-status .user_current_sc:before{
+    color:var(--bg3);
+    content: "\f520";
+    font-family: var(--awe)  !important;}
+#header .navbar-status .user_current_gc:before{
+    color:var(--al1);
+    content: "\f6be";
+    font-family: var(--awe)  !important;}
+*/
