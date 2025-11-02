@@ -393,10 +393,10 @@ a:hover{
 	background: rgba(25,15,36,0.8) !important;}
 #fraChatChannelMenu .channelSwitcher{
 	background: var(--bg1);
-	color: var(--bg2);}
+	color: var(--mi0) !important;}
 #fraChatChannelMenu .channelSwitcher:hover{
 	background: var(--bg2);
-	color: var(--mi0);}
+	color: var(--al2);}
 #fraChatChannelMenu .channelSwitcher.active{
 	background: var(--al2) !important;
 	color: var(--al3) !important;}
