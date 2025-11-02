@@ -449,8 +449,6 @@ Bottom of page
 #main .form-row .card-body.p-2{
     background: var(--bg2) !important;
     color: var(--hi2) !important;}
-#main .text-success{
-    color: var(--al3) !important;}
 .user-tag{
     border:5px double var(--al3);
     box-shadow: 0 0 10px var(--al3);}
@@ -458,3 +456,23 @@ Bottom of page
     border: 1px solid var(--al1);}
 #main table tr td{
     background: rgba(0,0,0,0.1);}
+
+
+@media(max-width:1200px){
+    #main .table .card.mb-3 a:before{
+        width: 330px;
+	    height: 400px;
+        top:-25%;
+        left:-35%;}
+    #main .featured-wolf a:first-of-type:before{
+        top: -2%;
+	    left: 18.5%;}}
+@media(max-width:768px){
+    #main .featured-wolf a:first-of-type:before{
+        left:11%;}}
+@media(max-width: 575px){
+    #main .featured-wolf a:first-of-type:before{
+        left:34.5%;}}
+@media(max-width: 495px){
+    #main .featured-wolf a:first-of-type:before{
+        left:31.5%;}}
