@@ -1,0 +1,347 @@
+/*
+Hiya!
+Thanks for using my CSS!
+Want to design your own CSS?
+Copy the cody from this url as a template and go wild!
+https://raw.githubusercontent.com/Athiropi/Wolvden/refs/heads/main/FreeCSS/Template.css
+Feel free to PM for any questions and I'll try my best to help out!
+Please do not remove any credits.
+*/
+
+/*Global settings*/
+:root{
+    --bg1: black;
+    --bg2: #222;
+    --bg3: #444;
+    --bg4: #666;
+    --hi1: white;
+    --hi2: #ddd;
+    --hi3: #bbb;
+    --hi4: #999;
+    --hi5: #777;
+    --gol: #d4b145;
+    --war: #715600;
+    --pri: #003141;
+    --dan: #551919;
+    --inf: #143343;
+    
+    --awe: 'Font Awesome 5 Free' !important;
+}
+
+/*Scrollbar*/
+::-webkit-scrollbar {
+	width: 0.3rem;} 
+::-webkit-scrollbar-track {
+	background: var(--bg1) !important;} 
+::-webkit-scrollbar-thumb {
+  background: var(--bg3) !important;}
+/*Brief desc when hovering (e.g. Hovering over Energt shows percentage*/
+.tooltip-inner {
+	background: var(--bg2);
+	color: var(--hi3);}
+
+/*Whole page*/
+body{
+    font-family: "Garamond",serif;
+    /*Credits: Rosie Sun on Unsplash	Original: https://unsplash.com/photos/photography-of-forest-1L71sPT5XKc*/
+    background: url("https://raw.githubusercontent.com/Athiropi/Wolvden/main/FreeCSS/DarkBasic/background-rsun.jpeg");
+    background-size: cover;
+    background-attachment: fixed;
+    color: var(--hi3);}
+
+/*Links*/
+/*Sets link details*/
+a{color: var(--hi2) !important;}
+/*Sets link appearance upon hover*/
+a:hover{
+    color: var(--hi1) !important;
+    text-decoration: none;}
+
+/*Buttons - unless overrwritten elsewhere*/
+.btn{
+    background: var(--bg2);
+    color: var(--bg4);
+    border: 1px solid var(--bg3);}
+.btn:hover{
+    background: var(--bg3);
+    color: var(--bg1);
+    border: 1px solid var(--bg1);}
+
+/*Typing + Dropdown area (Caves + Den Options)*/
+.form-control{
+    background: var(--bg3) !important;
+    color: var(--hi2) !important;}
+
+
+
+/*Header*/
+
+#header{border: 1px solid var(--bg1)}
+
+/*Top part of header*/
+#header .navbar-main{background: rgba(0,0,0,0.5);}
+#main-menu .navbar-nav{
+    flex: 0 0 100%;
+    justify-content: space-between;}
+#header .navbar-main .nav-item .fa,#header .navbar-main .nav-link{color: var(--bg3) !important;}
+#header .navbar-main .nav-item:hover .fa, #header .navbar-main .nav-link:hover{
+    color: var(--hi2) !important;
+    text-shadow:0px 0px 15px var(--hi1);}
+
+/*Middle part of header*/
+#header .navbar-status{
+    background: none;
+    color: var(--hi3);}
+.dropdown-menu{
+    background: var(--bg2);
+    border: 3px double var(--bg3)}
+#header .btn{
+    background: none;
+    color: var(--hi1) !important;}
+#header .dropdown-item{
+    background: none;
+    color: var(--hi3) !important}
+#header .dropdown-item:hover{
+    background: var(--bg1);
+    color: var(--hi2) !important}
+.dropdown-divider{display: none;}
+#header .navbar-status .icon, .icon-beetle-silver, .icon-beetle-gold{
+    visibility: hidden;
+    font-style: normal;}
+.icon-beetle-silver:before{
+    visibility: visible;
+    color: var(--hi2);
+    content: "\f51e";
+    font-family: var(--awe)  !important;}
+.icon-beetle-gold:before{
+    visibility: visible;
+    color: var(--gol);
+    content: "\f51e";
+    font-family: var(--awe)  !important;}
+
+/*Bottom part of header*/
+#header .breadcrumb-nav{
+    background: rgba(0,0,0,0.4);}
+.breadcrumb-item.active{
+    color: var(--bg3);}
+.fa-bookmark.text-danger::before{
+    color: var(--bg3);}
+
+
+
+/*Both main and sidebar*/
+
+.container:nth-of-type(4){box-shadow: 0 0 5px var(--bg1)}
+/*Progress bars*/
+.progress{
+    background: var(--bg2) !important;
+    border: 1px solid var(--bg3);}
+.bg-success{background: var(--war) !important;}
+.bg-warning{background: var(--war) !important;}
+.bg-primary{background: var(--pri) !important;}
+.bg-danger{background: var(--dan) !important;}
+.bg-info{background: var(--inf) !important;}
+#progress-energy,#progress-hunger, #progress-hp, #progress-xp{
+    background-image: linear-gradient(to right, white, black) !important;}
+
+
+
+/*Main*/
+/*Big main box on the right*/
+
+#main{
+    background: rgba(0,0,0,0.5);}
+
+/*Your pack name at top of main*/
+#main > h1{
+    text-align: center;
+    font-size: 50px;
+    color: var(--hi1);}
+
+/*Alerts (eg not 100% survival chance, hunters finished, etc)*/
+.alert{
+    background: var(--bg2);
+    color: var(--hi4);
+    border: 1px solid var(--hi3);}
+
+/*Entire row with navigation to your den & profile in main*/
+.nav-tabs{
+    justify-content: center;
+    border: 0 !important;}
+/*Den nav*/
+.nav-tabs .nav-link.active{
+    background: none;
+    color: var(--hi3) !important;}
+/*Profile nav*/
+.nav-tabs .nav-link{
+    background: none;
+    color: var(--hi3) !important;
+    border: 0;}
+.nav-tabs .nav-link:hover{
+    color: var(--hi1) !important;
+    text-shadow: 0 0 5px var(--hi1)}
+
+/*HTML Profile*/
+#fraProfileHTML,#fraDenHTML{
+    color: var(--hi2);}
+
+/*Leader + Featured + Caves Box*/
+/*
+#main table = Leader + Featured
+#main table th = All table headers
+#main table th a = All header colour
+#main table tr = All table's main body background
+#main table .card-body = All wolf footnote area
+#main table .card-body .text-light = All wolf name area
+#main table .btn(:hover) = Collapse/Expand/Update button
+*/
+#main table th{
+    background: rgba(0,0,0,0.3);
+    text-align: center;}
+#main table tr{
+    background: rgba(0,255,0,0);}
+#main table .card-body{
+    background: rgba(0,0,0,0.2) !important;
+    color: var(--hi4);}
+#main table .card-body .text-light{
+    background: none !important;
+    color: var(--hi1) !important;}
+#main table .card-body .rounded-bottom.pl-3{
+    padding: 0 !important;}
+#main table .bottom{
+    background: none;}
+.badge-info{
+	background: var(--bg2);
+	color: var(--hi2);}
+.fa-venus{color: #890078;}
+.fa-mars{color: #000474;}
+
+/*Den Cards*/
+#main table .card img, #denCards img{
+    filter: grayscale(100%);}
+#main table .card:hover img, #denCards img:hover{
+    filter:grayscale(0%);}
+
+/*Create a New Cave*/
+
+#main .card.mb-3{
+    background: rgba(0,0,0,0.5);
+    color: var(--hi5);}
+#main .card.mb-3 span{
+    color: var(--bg4) !important;}
+#main .card.mb-3 b{
+    color: var(--hi2) !important;}
+
+/*Bar in HTML section with all the buttons*/
+#fraHTMLInputBar{
+    background: var(--bg2);}
+#fraHTMLInputBar .btn{
+    background: var(--bg3);
+    color: var(--bg1);}
+#fraHTMLInputBar .btn:hover{
+    background: var(--bg4);
+    color: var(--hi4);}
+
+/*Expand Territory + Add Immortal Slot*/
+#main .mt-3 .card{
+    background: rgba(0,0,0,0.5);
+    color: var(--hi3);}
+#main .mt-3 .card-header{
+    background: none;}
+#main .mt-3 .card-body{
+    background:  none;}
+
+
+
+/*Sidebar*/
+
+#sidebar{
+    background: rgba(0,0,0,0.2);
+    color: var(--hi3);}
+#sidebar .card{
+    border: 1px solid var(--bg2);
+    background: rgba(0,0,0,0.1) !important;}
+#sidebar span{
+    color: var(--hi2) !important;}
+
+    
+
+/*Chat*/
+/*
+#chatboxContainer = Chat card background
+#label_currentChannel = Current channel with dropdown menu hidden
+#fraChatChannelMenu = Dropdown menu background
+#fraChatChannelMenu button = Individual dropdown menu items
+#fraChatChannelMenu .channelSwitcher.active = Current channel in dropdown menu
+#btnChatSettings .fa-cog = Cog symbol
+.s-chat-message = chat message designs alternate consecutively
+*/
+#label_currentChannel{
+    background: var(--bg1) !important;
+    color: var(--hi1) !important;}
+#fraChatChannelMenu{
+	background: var(--bg3) !important;}
+#fraChatChannelMenu .channelSwitcher{
+	background: none;
+	color: var(--hi3) !important;}
+#fraChatChannelMenu .channelSwitcher:hover{
+	background: var(--bg2);
+	color: var(--hi2) !important;}
+#fraChatChannelMenu .channelSwitcher.active{
+	background: var(--bg1) !important;
+	color: var(--hi1) !important;}
+#btnChatSettings{
+    background: none !important;
+    color: var(--hi1) !important;}
+#chatMessagePinned{
+    background: var(--bg4) !important;
+    color: var(--hi1) !important;}
+#btnLoadNewMessages{
+    background: var(--bg4) !important;
+    color: var(--hi1) !important;}
+.s-chat-message:nth-child(odd){
+    background: var(--bg2) !important;
+    color: var(--hi4) !important;}
+.s-chat-message:nth-child(even){
+    background: var(--bg3) !important;
+    color: var(--hi3) !important;}
+.s-chat__username{
+    color: var(--bg1) !important;}
+.s-chat-message_timestamp{
+    color: var(--bg1) !important;}
+.s-chat-message_menu{
+    color: var(--bg1) !important;}
+#txtChatInput{
+    background: var(--bg2) !important;
+    color: var(--hi4) !important}
+.s-chat-error_screen{
+    background: none !important;
+    color: var(--bg4);}
+
+
+
+
+/*Footer*/
+/*
+Bottom of page
+*/
+#footer{
+    background: rgba(0,0,0,0.6);
+    color: var(--hi4);}
+
+
+
+/*Profile Optimisation*/
+#main table td.left{
+    background: rgba(0,0,0,0.2) !important;}
+#main .form-row .card-body.p-2{
+    background: var(--bg2) !important;
+    color: var(--hi5) !important;}
+#main .text-success{
+    color: var(--hi1) !important;}
+
+
+
+
+/*CSS by #185626*/
+
