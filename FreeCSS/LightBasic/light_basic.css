@@ -1,0 +1,326 @@
+/*
+Hiya!
+Thanks for using my CSS!
+Want to design your own CSS?
+Copy the cody from this url as a template and go wild!
+https://raw.githubusercontent.com/Athiropi/Wolvden/refs/heads/main/FreeCSS/Template.css
+Feel free to PM for any questions and I'll try my best to help out!
+Please do not remove any credits.
+*/
+
+
+/*Import a font style*/
+@font-face{
+    font-family: "Poiret";
+    src: url("https://raw.githubusercontent.com/Athiropi/Wolvden/main/FreeCSS/LightBasic/PoiretOne-Regular.ttf") format("truetype");}
+
+/*Global settings*/
+:root{
+    --bg1: #fff;
+    --bg2: #ddd;
+    --bg3: #bbb;
+    --bg4: #999;
+    --bg5: #777;
+    --bg6: #555;
+    --hi1: #e4fbff;
+    --hi2: rgb(180, 223, 229);
+    --hi3: #9ccacf;
+    --hi4: #7fb4bd;
+    --gc1: #f2efaa;
+    --gc2: #fcfacb;
+    
+    /*Credits: Josh Kirk on Unsplash	Original: https://unsplash.com/photos/lake-beside-mountain-under-cloudy-sky-T_3JkNB08tk*/
+    --im1: url("https://raw.githubusercontent.com/Athiropi/Wolvden/main/FreeCSS/LightBasic/background-jkirk.jpeg");
+    /*Credits: */
+    --im2: url("https://raw.githubusercontent.com/Athiropi/Wolvden/main/FreeCSS/LightBasic/LightBasicBackground.jpeg");
+    
+    --awe: 'Font Awesome 5 Free' !important;
+}
+
+/*Scrollbar*/
+::-webkit-scrollbar {
+	width: 0.3rem;} 
+::-webkit-scrollbar-track {
+	background: var(--hi`);} 
+::-webkit-scrollbar-thumb {
+  background: var(--hi1) !important;}
+/*Brief desc when hovering (e.g. Hovering over Energt shows percentage*/
+.tooltip-inner {
+	background: var(--hi2);
+	color: var(--bg1);}
+
+/*Whole page*/
+body{
+    font-family: "Poiret";
+    background: var(--im1);
+    background-size: cover;
+    background-attachment: fixed;
+    color: var(--bg1);}
+
+
+/*Links*/
+/*Sets link details*/
+a{color: var(--gc2) !important;}
+/*Sets link appearance upon hover*/
+a:hover{
+    color: var(--hi1) !important;
+    text-decoration: none;}
+
+/*Buttons - unless overrwritten elsewhere*/
+.btn{
+    background: var(--hi3);
+    color: var(--hi1);
+    border: 0;}
+.btn:hover{
+    background: var(--bg1);
+    color: var(--hi4);}
+
+/*Typing + Dropdown area (Caves + Den Options)*/
+.form-control{
+    background: var(--bg1) !important;
+    color: var(--hi4) !important;
+    border: var(--bg1);}
+
+
+
+/*Header*/
+
+/*Top part of header*/
+#header .navbar-main{
+    background: rgba(255,255,255,0.7)}
+#main-menu, #main-menu .fa{
+    background: var(--im2) -20px -20px repeat;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;}
+#header .navbar-main .nav-item a:hover, #header .navbar-status a:hover{
+    text-shadow: 0 0 0px var(--hi2);}
+
+/*Middle part of header*/
+#header .navbar-status{
+    background: rgba(255,255,255,0.4);
+    color: var(--bg1);
+    text-shadow: 0 0 1px #000}
+#header .navbar-status .icon, .icon-beetle-silver, .icon-beetle-gold{
+    visibility: hidden;
+    font-style: normal;}
+.icon-beetle-silver:before{
+    visibility: visible;
+    color: var(--bg1);
+    content: "\f51e";
+    font-family: var(--awe)  !important;}
+.icon-beetle-gold:before{
+    visibility: visible;
+    color: var(--gc);
+    content: "\f51e";
+    font-family: var(--awe)  !important;}
+.dropdown-menu{
+    background: var(--hi2);
+    border: 1px solid white}
+.dropdown-divider{display: none;}
+#header .btn{
+    background: none;
+    color: white !important;}
+#header .dropdown-item{
+    background: none;
+    color: var(--hi1) !important}
+
+/*Bottom part of header*/
+#header .breadcrumb-nav{
+    background: rgba(255,255,255,0.1);}
+.breadcrumb-item.active{
+    color: var(--hi1);}
+.fa-bookmark.text-danger::before{
+    color: var(--hi3);}
+
+
+
+/*Both main and sidebar*/
+.progress{
+    background: var(--bg1) !important;}
+.bg-warning{
+    background: #fff6ba !important;}
+.bg-primary{
+    background: #baceff !important;}
+.bg-danger{
+    background: #ffbaba !important;}
+.bg-info{
+    background: #baffe8 !important;}
+.bg-success{
+    background: #f3baff !important;}
+
+
+
+/*Main*/
+/*Big main box on the right*/
+
+#main{
+    background: rgba(255,255,255,0.3);}
+
+/*Your pack name at top of main*/
+#main > h1{
+    text-align: center;
+    background: var(--im2) -20px -20px repeat;
+    background-size: cover;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 50px;}
+
+/*Alerts (eg not 100% survival chance, hunters finished, etc)*/
+.alert{
+    background: var(--hi2);
+    color: var(--bg1);
+    border: 1px solid white;}
+
+/*Entire row with navigation to your den & profile in main*/
+.nav-tabs{
+    justify-content: space-evenly;
+    border: 0 !important;}
+/*Den nav*/
+.nav-tabs .nav-link{
+    background: none !important;
+    color: var(--hi1) !important;
+    border: none;}
+.nav-tabs .nav-link:hover{color: var(--bg1) !important;}
+
+
+/*HTML Profile*/
+#fraProfileHTML, #fraDenHTML{color: var(--bg1);}
+
+/*Leader + Featured + Caves Box*/
+/*
+#main table = Leader + Featured
+#main table th = All table headers
+#main table th a = All header colour
+#main table tr = All table's main body background
+#main table .card-body = All wolf footnote area
+#main table .card-body .text-light = All wolf name area
+#main table .btn(:hover) = Collapse/Expand/Update button
+*/
+#main table{border: 1px solid white;}
+#main table th{
+    background: rgba(255,255,255,0.4);
+    text-align: center;}
+#main table tr{
+    background: rgba(255,255,255,0.1);
+    color: var(--bg1);}
+#main table .card-body{
+    background: rgba(180, 223, 229,0.4) !important;
+    color: white;
+    border: 1px solid white;}
+#main table .card-body .text-light{
+    background: none !important;
+    color: var(--bg1) !important;}
+.card-img-top, .featured-wolf img, .rounded-bottom{border: 1px solid white;}
+#main table .card-body .rounded-bottom.pl-3{
+    padding: 0 !important;}
+#main table .card-body > img{
+    border: 1px solid white;}
+#main table .card-body.pt-1{display: none;}
+#main table .bottom{
+    background: rgba(255,255,255,0.1);}
+.badge-info{
+	background: var(--hi2);
+	color: var(--bg1);}
+.fa-venus{color: pink;}
+.fa-mars{color: var(--hi2);}
+
+
+/*Den Cards*/
+#denCards .card-header{
+    background: var(--hi2);
+    border: 1px solid white;
+    border-radius: 0;}
+#denCards .card{border: 1px solid white;}
+#denCards .card:hover .card-header{background: var(--gc1);}
+
+/*Create a New Cave*/
+#main .card.mb-3{
+    background: rgba(255,255,255,0.2);
+    color: white;}
+#main .card.mb-3 span{
+    color: var(--hi1) !important;}
+#main .card.mb-3 b{
+    color: var(--gc1) !important;}
+
+/*Bar in HTML section with all the buttons*/
+#fraHTMLInputBar{
+    background: var(--hi2);}
+#fraHTMLInputBar .btn{
+    background: var(--hi1);
+    color: white;}
+#fraHTMLInputBar .btn:hover{
+    background: var(--gc1);
+    color: white;}
+
+/*Expand Territory + Add Immortal Slot*/
+#main .mt-3 .card{background: rgba(255,255,255,0.2);}
+
+
+
+
+/*Sidebar*/
+#sidebar{
+    background: rgba(255,255,255,0.4);}
+#sidebar .card{
+    border: 0;
+    background: rgba(255,255,255,0.1);}
+
+    
+
+/*Chat*/
+#label_currentChannel{
+    background: var(--hi2) !important;
+    color: white !important;}
+#fraChatChannelMenu{
+	background: var(--hi1) !important;}
+.channelSwitcher{
+    background: none !important;
+    color: var(--hi4) !important;}
+.channelSwitcher:hover{
+    background: var(--hi2) !important;
+    color: var(--gc1) !important;}
+.channelSwitcher.active{
+	background: var(--hi3) !important;
+	color: white !important;}
+#btnChatSettings{
+    background: none !important;
+    color: white !important;}
+#chatMessagePinned, #btnLoadNewMessages{
+    background: var(--hi1) !important;
+    color: var(--hi4) !important;}
+.s-chat-message:nth-child(odd){
+    background: var(--hi1) !important;
+    color: white !important;}
+.s-chat-message:nth-child(even){
+    background: var(--gc1) !important;
+    color: white !important;}
+.s-chat__username, .s-chat-message_timestamp{
+    color: var(--hi4) !important;}
+#txtChatInput{
+    background: var(--hi2) !important;
+    color: white !important;}
+.s-chat-error_screen{
+    background: var(--hi2) !important;
+    color: white ;}
+
+
+
+/*Footer*/
+/*
+Bottom of page
+*/
+#footer{
+    background: rgba(255,255,255,0.5);
+    color: white;}
+
+
+
+
+/*Profile Optimisation*/
+#main table td.left{
+    background: rgba(255,255,255,0.1) !important;}
+#main .form-row .card-body.p-2{
+    background: var(--bg1) !important;
+    color: var(--hi4) !important;}
+#main .text-success{
+    color: var(--hi2) !important;}
