@@ -126,6 +126,12 @@ a:hover{
     color: var(--bg3);}
 .fa-bookmark.text-danger::before{
     color: var(--bg3);}
+.breadcrumb.col-lg-9.ml-auto.text-break::after {
+	content: "CSS by #185626";
+	color: var(--bg2);
+	font-size: 14px;
+	position: absolute;
+	right: 2rem;}
 
 
 
