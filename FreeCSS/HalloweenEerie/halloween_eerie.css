@@ -254,6 +254,8 @@ border: 0;}
     color: var(--hi3) !important;}
 #main table .card-body a > img{
     border: 3px double var(--bg4);}
+#main table .card-body .rounded-bottom.pl-3{
+    padding: 0 !important;}
 #main table .card-body .text-light{
     background: none !important;
     color: var(--hi3) !important;}
