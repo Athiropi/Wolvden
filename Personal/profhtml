@@ -1,0 +1,90 @@
+/*HTML*/
+
+li{
+    list-style: none;}
+
+/*Top Div*/
+.introduction{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    padding: 10px;
+    background: url("https://raw.githubusercontent.com/Athiropi/Wolvden/main/Personal/Images/library.png");
+    background-size: contain;
+    text-align: center;
+    border: 3px double white;}
+.Es{
+    position: relative;
+    bottom: -12px;
+    width: 390px;
+    height:300px;
+    background: url("https://raw.githubusercontent.com/Athiropi/Wolvden/main/Personal/Images/Es-stoic.png") no-repeat;
+    background-size: contain;}
+.intro-text{
+    text-align: right;
+}
+
+.html-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly}
+
+.backgrounds, .links{
+    top:0;
+    text-align: center;
+    transition: width 5s;
+    max-height: 45px;
+    width: 390px;
+    margin: 30px;
+    padding: 10px;
+    border: 3px double white;
+    overflow: hidden;
+    transition: 1s;}
+
+.backgrounds:hover, .links:hover{
+    max-height: 400px;
+    transition: 1s;
+    overflow: scroll;}
+
+.backgrounds img{display: none;}
+.backgrounds li:hover{
+    background: #333;
+}
+.backgrounds li:hover img{
+    display: block;
+    position: absolute;
+    width: 400px;
+    right: 4rem;
+    top: 600px;}
+
+
+.bg-complete a{color: #00bc00 ;}
+.backgrounds .bg-inprog{color: yellow ;}
+.bg-idea{color:red ;}
+
+ul{
+    display: inline;
+    text-align:center;}
+
+
+
+@media(max-width: 992px){
+    .Es{
+        height: 200px;
+        bottom: -8px;
+    }
+}
+@media(max-width: 768px){
+    .Es{
+        height: 160px;
+        bottom: -11px;
+    }
+}
+@media(max-width: 576px){
+
+    .Es{
+        height: 160px;
+        bottom: -40px;
+    }
+}
