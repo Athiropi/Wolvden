@@ -280,20 +280,6 @@ a:hover{
 	top: -22%;
 	left: -35%;
 	pointer-events:none;}
-#main .featured-wolf a:first-of-type:before {
-	z-index: 1 !important;
-    position: absolute;
-	content: '';
-    display: inline-block;
-	background-image: url('https://raw.githubusercontent.com/Athiropi/Wolvden/main/FreeCSS/HalloweenDefault/batframe.jpeg');
-	background-size: 100% auto;
-	background-repeat: no-repeat;
-    mix-blend-mode: multiply;
-    top: -2%;
-	left: 9%;
-	width: 170px;
-	height: 200px;
-	pointer-events: none;}
 #main table img{
     border-radius: 50% !important;}
 #main table{
